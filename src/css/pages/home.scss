@@ -1,3 +1,177 @@
-.home-container{
+.home-container {
   background-color: rgb(255, 186, 0);
+  width: 100vw;
+  min-height: 100vh;
+
+  .background-video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    .background-video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      transform: translate(-50%, -50%);
+    }
+
+    .video-dark-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 1;
+    }
+
+    .video-overlay {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 850px;
+      max-width: 90%;
+      z-index: 2;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 auto;
+      width: 700px;
+      font-size: 46px;
+      font-weight: 500;
+      font-family: 'Roboto', Helvetica, Arial, sans-serif;
+      margin-bottom: 50px;
+
+      strong {
+        color: rgb(255, 186, 0);
+        font-weight: 900;
+      }
+    }
+
+    p{
+      font-size: 18px;
+      font-weight: 600;
+
+      strong {
+        font-weight: 900;
+      }
+    }
+
+    .link-overlay {
+
+      margin-top: 60px;
+
+      a{
+        text-decoration: none;
+      }
+
+      .appointement {
+        color: black;
+        padding: 15px;
+        background-color: rgb(255, 186, 0);
+        transition: background-color 0.4s;
+        border-radius: 30px;
+
+        &:hover {
+          background-color: rgb(255, 170, 0);
+        }
+      }
+
+      .contact {
+        padding: 15px;
+        margin-left: 20px;
+        border: solid 1px white;
+        color: white;
+        border-radius: 30px;
+        transition: background-color 0.4s;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.3) ;
+        }
+
+        .incon-comment {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+
+  .home-content {
+
+    .key-stats-container {
+      width: 90%;
+      margin: 0 auto;
+      height: 450px;
+
+      background-color: rgb(255, 186, 0);
+
+      .title {
+        margin-top: 100px;
+        width: 500px;
+
+        h2 {
+          font-size: 40px;
+          font-weight: 500;
+        }
+      }
+
+      .stats-cards-container{
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    .advantages-container {
+      height: 800px;
+      width: 100%;
+      background-color: rgb(48, 48, 48);
+
+      .advantages-content {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+      }
+
+        .advantages-left {
+          height: 100%;
+          width: 55%;
+          color: white;
+
+          .advantages-title{
+            h2 {
+              font-size: 40px;
+              font-weight: 500;
+              margin-top: 70px;
+            }
+          }
+
+          .advantages-text {
+            margin-top: 20px;
+
+            p  {
+              font-size: 20px;
+            }
+          }
+        }
+
+        .advantages-right {
+          height: 100%;
+          width: 45%;
+        }
+    }
+
+  }
+
 }

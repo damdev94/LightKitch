@@ -1,0 +1,29 @@
+.key-stats-card-container {
+  text-align: center;
+  background-color: rgba(242, 161, 0, 0.6);
+  padding: 40px 25px;
+  height: 230px;
+  width: 30%;
+  border-radius: 15px;
+  transition: 0.4s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  .statsText {
+    h3{
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+
+  .stats {
+    margin-top: 30px;
+
+    p{
+      font-size: 36px;
+      font-weight: 800;
+    }
+  }
+}
