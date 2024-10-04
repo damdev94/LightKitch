@@ -1,11 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import '../css/components/navbar.scss';
 import { motion } from 'framer-motion';
 
 const Navbar = ({pageVariants}) => {
+
+  const location = useLocation()
+
   return (
     <motion.div initial="initial" animate="animate" exit="exit" variants={pageVariants} className='transparent-container'>
+      <motion.div className='transparent-container-scale'
+      initial={{ scale: 1.1 }}
+      animate={{ scale: 1 }}
+      exit="exit"
+      transition={{ duration: 0.5, ease: 'easeOut' }}>
       <div className='navbar-container'>
         <nav className='nav'>
           <div className='nav-logo'>
@@ -17,17 +25,18 @@ const Navbar = ({pageVariants}) => {
               </Link>
           </div>
           <div className='nav-links'>
-            <Link to='/comment-ca-marche'>Comment ça marche</Link>
-            <Link to='/nos-savoirs-faire'>Nos savoirs-faire</Link>
-            <Link to='/a-propos'>A propos</Link>
-            <Link to='/rejoignez-nous'>Rejoignez-nous</Link>
-            <Link to='/blog'>Blog</Link>
+            <Link to='/comment-ca-marche' className={location.pathname === '/comment-ca-marche' ? 'active' : ''}>Comment ça marche</Link>
+            <Link to='/nos-savoirs-faire' className={location.pathname === '/nos-savoirs-faire' ? 'active' : ''}>Nos savoirs-faire</Link>
+            <Link to='/a-propos' className={location.pathname === '/a-propos' ? 'active' : ''}>A propos</Link>
+            <Link to='/rejoignez-nous' className={location.pathname === '/rejoignez-nous' ? 'active' : ''}>Rejoignez-nous</Link>
+            <Link to='/blog' className={location.pathname === '/blog' ? 'active' : ''}>Blog</Link>
           </div>
           <div className='nav-appointment'>
             <Link to='/rejoignez-nous'>Prendre RDV</Link>
           </div>
         </nav>
       </div>
+      </motion.div>
     </motion.div>
   );
 };
