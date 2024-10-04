@@ -8,6 +8,7 @@ import Blog from "../pages/Blog"
 import CommentCaMarche from "../pages/CommentCaMarche"
 import NosSavoirsFaire from "../pages/NosSavoirsFaire"
 import RejoignezNous from "../pages/RejoignezNous"
+import Layout from '../components/Layout'
 
 function AnimationRoutes() {
 
@@ -23,12 +24,12 @@ function AnimationRoutes() {
     <Route path='/' element={<Navigate to="/home" replace />} />
 
     <Route path='/' >
-      <Route path='home' element= {<Home pageVariants={pageVariants}/>} />
-      <Route path='comment-ca-marche' element= {<CommentCaMarche pageVariants={pageVariants}/>} />
-      <Route path='nos-savoirs-faire' element= {<NosSavoirsFaire pageVariants={pageVariants}/>} />
-      <Route path='a-propos' element= {<APropos pageVariants={pageVariants}/>} />
-      <Route path='rejoignez-nous' element= {<RejoignezNous pageVariants={pageVariants}/>} />
-      <Route path='blog' element= {<Blog pageVariants={pageVariants}/>} />
+      <Route path='home' element= {<Layout><Home pageVariants={pageVariants}/></Layout>} />
+      <Route path='comment-ca-marche' element= {<Layout><CommentCaMarche pageVariants={pageVariants}/></Layout>} />
+      <Route path='nos-savoirs-faire' element= {<Layout><NosSavoirsFaire pageVariants={pageVariants}/></Layout>} />
+      <Route path='a-propos' element= {<Layout><APropos pageVariants={pageVariants}/></Layout>} />
+      <Route path='rejoignez-nous' element= {<Layout><RejoignezNous pageVariants={pageVariants}/></Layout>} />
+      <Route path='blog' element= {<Layout><Blog pageVariants={pageVariants}/></Layout>} />
     </Route>
   </Routes>
   )
