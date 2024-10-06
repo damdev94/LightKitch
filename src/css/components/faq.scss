@@ -1,0 +1,35 @@
+.faq-questions-container {
+
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  .questions-title {
+    padding-top: 80px;
+    margin-bottom: 30px;
+
+    h2 {
+      font-size: 36px;
+      font-weight: 500;
+    }
+  }
+
+  .question {
+    background-color: rgba(245, 245, 245, 0.268) !important;
+  }
+
+  .css-nt424e-MuiPaper-root-MuiAccordion-root {
+    box-shadow: none !important;
+  }
+
+  .question-summary {
+    height: 80px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .question-infos {
+    font-size: 18px;
+    opacity: 0.9;
+    font-weight: 500;
+  }
+}

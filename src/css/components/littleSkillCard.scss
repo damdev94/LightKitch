@@ -1,0 +1,26 @@
+.skillCard-container {
+  display: flex;
+  background-color: rgb(255, 186, 0);
+  border-radius: 15px;
+  position: absolute;
+
+  .skillCard-left {
+    width: 50%;
+  }
+
+  .skillCard-right {
+    max-width: 50%;
+    padding: 25px;
+
+    h3 {
+      font-size: 24px;
+      font-weight: 550;
+      margin-bottom: 20px;
+    }
+
+    p{
+      font-size: 19px;
+      font-weight: 500;
+    }
+  }
+}
