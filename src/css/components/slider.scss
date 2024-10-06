@@ -1,0 +1,28 @@
+.carousel-container {
+height: 250px;
+width: 550px;
+padding: 20px;
+background-color: rgba(35, 35, 35, 0.66);
+border-radius: 10px;
+
+img {
+  height: 220px;
+  width: 220px;
+}
+
+  .slides {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+
+    .slide-text {
+      width: 250px;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 10px;
+      margin: 10px 0px 10px 40px;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+  }
+}

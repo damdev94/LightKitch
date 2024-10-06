@@ -1,3 +1,558 @@
-.home-container{
-  background-color: rgb(255, 186, 0);
+.home-container {
+  background-color: rgba(245, 245, 245,1);
+  width: 100vw;
+  min-height: 100vh;
+
+  .background-video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    .background-video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      transform: translate(-50%, -50%);
+    }
+
+    .video-dark-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 1;
+    }
+
+    .video-overlay {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 850px;
+      max-width: 90%;
+      z-index: 2;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 auto;
+      width: 700px;
+      font-size: 46px;
+      font-weight: 500;
+      font-family: 'Roboto', Helvetica, Arial, sans-serif;
+      margin-bottom: 50px;
+
+      strong {
+        color: rgb(255, 186, 0);
+        font-weight: 900;
+      }
+    }
+
+    p{
+      font-size: 18px;
+      font-weight: 600;
+
+      strong {
+        font-weight: 900;
+      }
+    }
+
+    .link-overlay {
+
+      margin-top: 60px;
+
+      a{
+        text-decoration: none;
+      }
+
+      .appointement {
+        color: black;
+        padding: 15px;
+        background-color: rgb(255, 186, 0);
+        transition: background-color 0.4s;
+        border-radius: 30px;
+
+        &:hover {
+          background-color: rgb(255, 170, 0);
+        }
+      }
+
+      .contact {
+        padding: 15px;
+        margin-left: 20px;
+        border: solid 1px white;
+        color: white;
+        border-radius: 30px;
+        transition: background-color 0.4s;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.3) ;
+        }
+
+        .incon-comment {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+
+  .home-content {
+
+    .key-stats-container {
+      width: 100%;
+      padding: 100px 0;
+
+      background-color: rgb(255, 186, 0);
+
+      .key-stats-content {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 0 !important;
+      }
+
+      .title {
+        width: 500px;
+
+        h2 {
+          font-size: 40px;
+          font-weight: 500;
+        }
+      }
+
+      .stats-cards-container{
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    .advantages-container {
+      height: 600px;
+      width: 100%;
+      background-color: rgb(48, 48, 48);
+
+      .advantages-content {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+      }
+
+        .advantages-left {
+          height: 100%;
+          width: 45%;
+          color: white;
+
+          .advantages-title{
+            h2 {
+              font-size: 40px;
+              font-weight: 500;
+              margin-top: 70px;
+              width: 500px;
+            }
+          }
+
+          .advantages-text {
+            margin-top: 20px;
+            margin-bottom: 40px;
+
+            p  {
+              font-size: 20px;
+            }
+          }
+        }
+
+        .advantages-right {
+          height: 100%;
+          width: 50%;
+          position: relative;
+          display: flex;
+          justify-content: flex-end;
+          margin-right: 70px;
+
+          .delivery-image {
+            height: 80%;
+            width: 80%;
+            top: -100px;
+            position: absolute;
+          }
+
+          img {
+            height: 700px;          }
+        }
+    }
+
+    .skills-container {
+      height: 2000px;
+      width: 100%;
+      background-color: rgb(245, 245, 245);
+
+      .skills-content {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      .animate-image {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        .box-image {
+          transform: rotate(90deg);
+          position: absolute;
+          top: 45%;
+          left: -20%;
+          z-index: 2;
+          max-width: 35%;
+        }
+
+        .hand-image {
+          transform: rotate(90deg);
+          position: absolute;
+          top: 37.5%;
+          left: -5%;
+          z-index: 1;
+          max-width: 25%;
+        }
+
+        .light-image {
+          position: absolute;
+          top: 39.6%;
+          transform: rotate(90deg);
+          left: 22%;
+          z-index: 1;
+          max-width: 25%;
+        }
+
+        .backgroundSun-image {
+          position: absolute;
+          top: 27%;
+          left: -10%;
+          filter: brightness(0.95);
+          max-width: 60%;
+        }
+      }
+    }
+
+    .brahim-feedback {
+      height: 500px;
+      width: 100%;
+      background-color: rgb(196, 196, 196);
+
+      .brahim-content {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .brahim-left {
+          width: 50%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+
+          img {
+            height: 370px;
+            border-radius: 10px;
+          }
+        }
+
+        .brahim-right {
+          width: 45%;
+          height: 100%;
+
+          .brahim-title {
+            margin-top: 100px;
+            h2{
+              font-size: 30px;
+              font-weight: 800;
+            }
+          }
+
+          .brahim-text {
+            margin-top: 40px;
+            margin-right: 20px;
+            font-size: 20px;
+            position: relative;
+
+            p{
+
+              position: relative;
+              .quoteLeft {
+                opacity: 0.6;
+                font-size: 30px;
+                position: absolute;
+                margin-left: -10px;
+                left : -30px;
+                top: -10px;
+              }
+
+              .quoteRight {
+                opacity: 0.6;
+                margin-right: -10px;
+                font-size: 30px;
+                position: absolute;
+                right: -30px;
+                bottom: -10px;
+              }
+            }
+          }
+
+          .brahim-testimonial {
+            margin-top: 50px;
+            opacity: 0.6;
+            font-style: italic;
+          }
+        }
+
+      }
+    }
+
+    .elriadh-feedback {
+      height: 500px;
+      width: 100%;
+      background-color: rgb(255, 186, 0);
+
+      .elriadh-content {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .elriadh-left {
+          width: 45%;
+          height: 100%;
+
+          .elriadh-title {
+            margin-top: 100px;
+            h2{
+              font-size: 30px;
+              font-weight: 800;
+            }
+
+          }
+
+          .elriadh-text {
+            margin-top: 40px;
+            margin-right: 20px;
+            font-size: 20px;
+            position: relative;
+
+            p{
+
+              position: relative;
+              .quoteLeft {
+                opacity: 0.6;
+                font-size: 30px;
+                position: absolute;
+                margin-left: -10px;
+                left : -30px;
+                top: -10px;
+              }
+
+              .quoteRight {
+                opacity: 0.6;
+                margin-right: -10px;
+                font-size: 30px;
+                position: absolute;
+                right: -30px;
+                bottom: -10px;
+              }
+            }
+          }
+
+          .elriadh-testimonial {
+            margin-top: 50px;
+            opacity: 0.6;
+            font-style: italic;
+          }
+        }
+
+        .elriadh-right {
+          width: 50%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+
+          img {
+            height: 370px;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+
+    .faq-container {
+      width: 100%;
+      .faq-content {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+
+    .marquee-container {
+      padding-top: 30px;
+    }
+
+    .deliveryPlatforms-container {
+      width: 100%;
+
+      .deliveryPlatforms-content {
+        width: 90%;
+        margin: 0 auto;
+
+        .main-image {
+          width: 100%;
+        }
+      }
+    }
+
+    .join-container {
+      width: 100%;
+      position: relative;
+      .join-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        height: 250px;
+        width: 100%;
+        bottom: 300px;
+        background-color: rgb(255, 186, 0);
+
+        h2 {
+          margin-bottom: 40px;
+        }
+
+        p{
+          margin-bottom: 40px;
+        }
+
+        a {
+          text-decoration: none;
+          color: black;
+          font-size: 20px;
+          padding: 10px 15px;
+          border: 1px solid rgba(0, 0, 0, 1);
+          border-radius: 30px;
+          transition: 0.4s;
+
+          &:hover {
+            transform: scale(1.03);
+            background-color: rgb(255, 207, 75);
+          }
+        }
+      }
+
+      .menu-container {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 130px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 50px;
+
+        h3 {
+          margin-bottom: 30px;
+          font-weight: 500;
+        }
+
+        .links-container {
+          width: 50%;
+          .second-link {
+              margin-left: 150px;
+          }
+         .links {
+          padding: 10px 0;
+          a {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.6);
+            font-weight: 500;
+            transition: 0.3s;
+
+            &:hover {
+              color: black;
+            }
+          }
+         }
+        }
+
+        .apointement-button {
+
+          margin-top: 30px;
+
+          .apointement {
+            text-decoration: none;
+            color: black;
+            font-weight: 550;
+            padding: 10px 15px;
+            border: 1px solid black;
+            border-radius: 30px;
+            transition: 0.3s ease;
+
+            &:hover {
+              background-color: rgba(0, 0, 0, 0.1);
+            }
+          }
+        }
+
+        .form-container {
+          width: 50%;
+          display: flex;
+          justify-content: flex-end;
+
+          form {
+            .inputs {
+              input {
+                border: none;
+                margin: 10px;
+                padding: 15px 40px;
+                background-color: rgba(196, 196, 196, 0.5);
+
+                &:focus {
+                  outline: none;
+                  border: none;
+                }
+              }
+            }
+
+            button {
+              padding: 10px 15px;
+              background-color: rgba(245, 245, 245, 1);
+              border-radius: 30px;
+              border: 1px solid rgba(0, 0, 0, 1);
+              font-size: 16px;
+              transition: border 0.9s ease, background-color 0.4s ease;
+              position: relative;
+              left: 430px;
+
+              &:hover {
+                cursor: pointer;
+                background-color: rgba(0, 0, 0, 0.1);
+                border: none;
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
 }

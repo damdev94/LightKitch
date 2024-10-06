@@ -1,0 +1,18 @@
+.marqueeComponent-container {
+  height: 80px;
+  overflow: hidden;
+  margin-top: 30px;
+  background-color: rgba(255, 180, 0, 1);
+
+  .point {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    font-size: 100px;
+  }
+
+  .word {
+    font-size: 30px;
+    font-weight: 500;
+  }
+}
