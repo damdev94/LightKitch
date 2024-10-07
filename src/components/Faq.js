@@ -9,7 +9,7 @@ export default function Faq() {
   return (
     <div className='faq-questions-container'>
       <div className='questions-title'>
-        <h2>Frequently asked questions</h2>
+        <h2>Questions fréquemment posées</h2>
       </div>
       <div className='questions'>
         <Accordion className='question'>

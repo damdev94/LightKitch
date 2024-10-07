@@ -11,6 +11,9 @@ import Faq from '../components/Faq';
 import MarqueeComponent from '../components/MarqueeComponent';
 
 function Home({ pageVariants }) {
+
+
+
   return (
     <motion.div initial="initial" animate="animate" exit="exit" variants={pageVariants} className='home-container'>
       <div className='background-video-container'>
@@ -166,7 +169,7 @@ function Home({ pageVariants }) {
           <div className='elriadh-content'>
             <div className='elriadh-left'>
               <div className='elriadh-title'>
-                <h2>Restaurant El Riadh</h2>
+                <h2>Ce que Mohamed pense de nous</h2>
               </div>
               <div className='elriadh-text'>
                 <p><FontAwesomeIcon icon={faQuoteLeft} className='quoteLeft'/>Grâce à Light Kitch on a pu multiplier le nombre de ventes. On a touché une nouvelle clientèle et ça nous a permis de gagner en notoriété, on était déjà connus à Lille mais maintenant encore plus ! Les tablettes sonnent tout le temps et ça fait plaisir</p>
@@ -194,6 +197,11 @@ function Home({ pageVariants }) {
         <div className='deliveryPlatforms-container'>
           <div className='deliveryPlatforms-content'>
             <img className='main-image' src='https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984569/LightKitch/imgtrans_irluyg.png'alt='delivery'/>
+            <img className='logo-image yassir-logo' src='https://res.cloudinary.com/dt04wtcwf/image/upload/v1728283882/LightKitch/yassir_rwhgxl.png' alt='yassir' />
+            <img className='logo-image uber-logo' src='https://res.cloudinary.com/dt04wtcwf/image/upload/v1728283882/LightKitch/uberEat_dsmpg3.png' alt='uber-logo' />
+            <img className='logo-image deliveroo-logo' src='https://res.cloudinary.com/dt04wtcwf/image/upload/v1728283882/LightKitch/deliveroo_u2ie5x.png' alt='deliveroo-logo'/>
+            <img className='logo-image justEat-logo' src='https://res.cloudinary.com/dt04wtcwf/image/upload/v1728283882/LightKitch/justEat_mpnj6k.png'alt='justEat-logo' />
+            <img className='logo-image lightKitch-logo' src='https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984569/LightKitch/logolksmall_orq5fg.png' alt='lightKitch-logo'/>
           </div>
         </div>
         <div className='join-container'>
@@ -224,7 +232,9 @@ function Home({ pageVariants }) {
                   <input type='email' placeholder='Email'></input>
                 </div>
                 <br/>
-                <button type='submit'>Soummettre</button>
+                <div className='button-container'>
+                  <button type='submit'>Soummettre</button>
+                </div>
               </form>
             </div>
           </div>
