@@ -3,7 +3,7 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import '../css/components/faq.scss';
+import '../../../css/components/globalFooter/globalFooterComponent/faq.scss'
 
 export default function Faq() {
   return (

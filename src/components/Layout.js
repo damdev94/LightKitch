@@ -8,7 +8,7 @@ const Layout = ({ children, pageVariants }) => {
     <motion.div initial="initial" animate="animate" exit="exit" variants={pageVariants} className='layout-container'>
       <Navbar />
       <main>{children}</main>
-      <Footer />
+      <Footer/>
     </motion.div>
   );
 };
