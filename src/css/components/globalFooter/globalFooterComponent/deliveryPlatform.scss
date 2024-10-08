@@ -1,0 +1,50 @@
+.deliveryPlatforms-content {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  background-color: bisque;
+  z-index: -2;
+
+  .main-image {
+    width: 100%;
+    z-index: 0;
+
+  }
+
+  .logo-image {
+    width: 12%;
+    height: 17%;
+    z-index: -1;
+    border-radius: 30px;
+    position: absolute;
+    transition: top 0.2s ease;
+  }
+
+  .yassir-logo {
+    left: 5%;
+    top: 50%;
+  }
+
+  .uber-logo {
+    left: 20%;
+    top: 60%
+  }
+
+  .deliveroo-logo {
+    right: 20%;
+    top: 60%;
+  }
+
+  .justEat-logo {
+    right: 5%;
+    top: 50%;
+  }
+
+  .lightKitch-logo {
+    right: 40%;
+    width: 20%;
+    height: 25%;
+    top: 60%;
+  }
+}

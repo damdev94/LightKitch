@@ -1,16 +1,62 @@
-import React from 'react';
+import React, { useEffect, useState, useRef, useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPenToSquare, faComment, faQuoteLeft, faQuoteRight} from '@fortawesome/free-solid-svg-icons';
 import KeyStatsCard from '../components/KeyStatsCard';
 import '../css/pages/home.scss';
 import Slider from '../components/Slider';
 import SkillCard from '../components/LittleSkillCard';
-import Faq from '../components/Faq';
-import MarqueeComponent from '../components/MarqueeComponent';
+import GlobalFooter from '../components/globalFooter/GlobalFooter';
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Home({ pageVariants }) {
+
+
+  const handImage = useRef(null);
+  const lightImage = useRef(null);
+  const boxImage = useRef(null);
+
+  useLayoutEffect(() => {
+    gsap.to(lightImage.current, {
+      xPercent: 30,
+      duration: 2,
+        scrollTrigger : {
+          trigger: lightImage.current,
+          toggleActions: 'play reverse play reverse',
+          start: 'top 1000px',
+          scrub: 2,
+        }
+    });
+
+    gsap.to(handImage.current, {
+      xPercent: 20,
+      duration: 2,
+        scrollTrigger : {
+          trigger: handImage.current,
+          toggleActions: 'play reverse play reverse',
+          start: 'top 1000px',
+          scrub: 2,
+        }
+    });
+
+    gsap.to(boxImage.current, {
+      xPercent: 10,
+      duration: 2,
+        scrollTrigger : {
+          trigger: boxImage.current,
+          toggleActions: 'play reverse play reverse',
+          start: 'top 1000px',
+          scrub: 2,
+        }
+    });
+  }, []);
+
+
+
   return (
     <motion.div initial="initial" animate="animate" exit="exit" variants={pageVariants} className='home-container'>
       <div className='background-video-container'>
@@ -96,7 +142,7 @@ function Home({ pageVariants }) {
               height = "370px"
               width = "380px"
               top = "200px"
-              left = "450px"
+              left = "500px"
             />
              <SkillCard
               img ="https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984560/LightKitch/2149250122_a9xgrz.jpg"
@@ -105,7 +151,7 @@ function Home({ pageVariants }) {
               height = "370px"
               width = "380px"
               top = "600px"
-              left = "750px"
+              left = "850px"
             />
              <SkillCard
               img ="https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984560/LightKitch/2148145553_ok0d56.jpg"
@@ -114,7 +160,7 @@ function Home({ pageVariants }) {
               height = "370px"
               width = "380px"
               top = "1000px"
-              left = "750px"
+              left = "850px"
             />
             <SkillCard
               img ="https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984561/LightKitch/2149834253_kkevob.jpg"
@@ -135,9 +181,24 @@ function Home({ pageVariants }) {
             />
 
             <div className='animate-image'>
-              <img className='box-image' src='https://res.cloudinary.com/dt04wtcwf/image/upload/v1728229102/LightKitch/caisse_fuqkqv.png' alt='box' />
-              <img className = 'hand-image'src='https://res.cloudinary.com/dt04wtcwf/image/upload/v1728229102/LightKitch/main_akcrzr.png' alt='hand' />
-              <img className = 'light-image' src='https://res.cloudinary.com/dt04wtcwf/image/upload/v1728229102/LightKitch/ampoule_htoxar.png' alt='light' />
+              <img
+                className='box-image'
+                src='https://res.cloudinary.com/dt04wtcwf/image/upload/v1728229102/LightKitch/caisse_fuqkqv.png'
+                alt='box'
+                ref={boxImage}
+              />
+              <img
+                className = 'hand-image'
+                src='https://res.cloudinary.com/dt04wtcwf/image/upload/v1728229102/LightKitch/main_akcrzr.png'
+                alt='hand'
+                ref={handImage}
+              />
+              <img
+                className = 'light-image'
+                src='https://res.cloudinary.com/dt04wtcwf/image/upload/v1728229102/LightKitch/ampoule_htoxar.png'
+                alt='light'
+                ref={lightImage}
+              />
               <img className='backgroundSun-image' src='https://res.cloudinary.com/dt04wtcwf/image/upload/v1728230326/LightKitch/soleil_kl3vda.png' alt='sun'/>
             </div>
           </div>
@@ -166,7 +227,7 @@ function Home({ pageVariants }) {
           <div className='elriadh-content'>
             <div className='elriadh-left'>
               <div className='elriadh-title'>
-                <h2>Restaurant El Riadh</h2>
+                <h2>Ce que Mohamed pense de nous</h2>
               </div>
               <div className='elriadh-text'>
                 <p><FontAwesomeIcon icon={faQuoteLeft} className='quoteLeft'/>Grâce à Light Kitch on a pu multiplier le nombre de ventes. On a touché une nouvelle clientèle et ça nous a permis de gagner en notoriété, on était déjà connus à Lille mais maintenant encore plus ! Les tablettes sonnent tout le temps et ça fait plaisir</p>
@@ -183,52 +244,7 @@ function Home({ pageVariants }) {
             </div>
           </div>
         </div>
-        <div className='faq-container'>
-          <div className='faq-content'>
-            <Faq />
-          </div>
-        </div>
-        <div className='marquee-container'>
-          <MarqueeComponent />
-        </div>
-        <div className='deliveryPlatforms-container'>
-          <div className='deliveryPlatforms-content'>
-            <img className='main-image' src='https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984569/LightKitch/imgtrans_irluyg.png'alt='delivery'/>
-          </div>
-        </div>
-        <div className='join-container'>
-          <div className='join-content'>
-            <h2>Êtes-vous prêt à nous rejoindre?</h2>
-            <p>Découvrez le potentiel de votre restaurant virtuel</p>
-            <Link to='/rejoignez-nous'>Prendre RDV</Link>
-          </div>
-          <div className='menu-container'>
-            <div className='links-container'>
-              <h3>Main menu</h3>
-              <div className='links'>
-                <Link>Marques virtuelles</Link>
-                <Link className='second-link' to='/comment-ca-marche'>Comment ça marche</Link>
-              </div>
-              <div className='links'>
-                <Link>Histoires de réussite</Link>
-                <Link className='second-link' to='/blog'>Blog</Link>
-              </div>
-              <div className='apointement-button'>
-                <Link className='apointement' to='/rejoignez-nous'>Prendre RDV</Link>
-              </div>
-            </div>
-            <div className='form-container'>
-              <form>
-                <div className='inputs'>
-                  <input type='text' placeholder='Nom'></input>
-                  <input type='email' placeholder='Email'></input>
-                </div>
-                <br/>
-                <button type='submit'>Soummettre</button>
-              </form>
-            </div>
-          </div>
-        </div>
+        <GlobalFooter />
       </div>
 
     </motion.div>

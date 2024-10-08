@@ -3,13 +3,13 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import '../css/components/faq.scss';
+import '../../../css/components/globalFooter/globalFooterComponent/faq.scss'
 
 export default function Faq() {
   return (
     <div className='faq-questions-container'>
       <div className='questions-title'>
-        <h2>Frequently asked questions</h2>
+        <h2>Questions fréquemment posées</h2>
       </div>
       <div className='questions'>
         <Accordion className='question'>
