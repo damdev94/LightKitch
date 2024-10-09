@@ -5,6 +5,7 @@
     width: 100%;
     background-color: rgba(242,221,198,0.81);
     display: flex;
+    overflow: hidden;
 
     .presentation-left {
       width: 50%;
@@ -81,4 +82,49 @@
       }
     }
   }
+
+  .commentCaMarche-integration {
+    height: 270vh;
+    width: 100%;
+    background:rgb(255, 186, 0);
+
+
+    .integration-container {
+      height: 100%;
+      position: relative;
+
+      .integaration-string-image {
+        width: 75%;
+        margin: 0 auto;
+
+        img {
+          position: absolute;
+          margin-top: 10%;
+          left: 10%;
+          width: 80%;
+        }
+      }
+
+      .integration-chef-image {
+
+        img {
+          position: absolute;
+          width: 130%;
+          top: 35%;
+          left: -40%;
+          z-index: 1;
+        }
+      }
+
+      .integration-title {
+
+        padding-top: 50px;
+      }
+
+      .integration-step {
+
+      }
+    }
+  }
+
 }
