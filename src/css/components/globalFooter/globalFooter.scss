@@ -1,7 +1,10 @@
 .faq-container {
+  position: relative;
   width: 100%;
+  z-index: 5;
 
   .faq-content {
+    position: relative;
     width: 90%;
     margin: 0 auto;
   }
