@@ -77,7 +77,7 @@ function CommentCaMarche({pageVariants}) {
             <img src='https://res.cloudinary.com/dt04wtcwf/image/upload/v1728483956/LightKitch/svg-3_wnpmji.svg' alt='string'/>
           </div>
           <div className='integration-chef-image'>
-            <img src='https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984564/LightKitch/chef2-1-1_hheoio.png' alt='chef' />
+            <img src='https://res.cloudinary.com/dt04wtcwf/image/upload/v1728498184/chef2-1-1_rcb8tr.png' alt='chef' />
           </div>
 
           <div className='integration-title'>
@@ -87,63 +87,63 @@ function CommentCaMarche({pageVariants}) {
           <div className='integration-step'>
             <CardIntegration
               number = "1"
-              top = "15%"
-              left = "7.5%"
+              top = "20vw"
+              left = "7.5vw"
               text =  {texts[0]}
               textSide= {true}
             />
 
             <CardIntegration
               number = "2"
-              top = "22%"
-              left = "30.5%"
+              top = "30vw"
+              left = "30.5vw"
               text =  {texts[1]}
               textSide= {true}
             />
 
             <CardIntegration
               number = "3"
-              top = "31%"
-              left = "55%"
+              top = "41.5vw"
+              left = "55vw"
               text =  {texts[2]}
               textSide= {true}
             />
 
              <CardIntegration
               number = "4"
-              top = "38%"
-              left = "38.5%"
+              top = "51vw"
+              left = "38.5vw"
               text =  {texts[3]}
               textSide= {true}
             />
 
             <CardIntegration
               number = "5"
-              top = "47.5%"
-              left = "35%"
+              top = "63.5vw"
+              left = "35vw"
               text =  {texts[4]}
               textSide= {false}
             />
 
             <CardIntegration
               number = "6"
-              top = "55%"
-              left = "57.5%"
+              top = "74vw"
+              left = "57.5vw"
               text =  {texts[5]}
               textSide= {false}
             />
 
             <CardIntegration
               number = "7"
-              top = "62.5%"
-              left = "57.5%"
+              top = "85vw"
+              left = "57.5vw"
               text =  {texts[6]}
               textSide= {false}
             />
 
             <CardIntegration
               number = "8"
-              top = "70.5%"
+              top = "95vw"
               left = "57.5%"
               text =  {texts[7]}
               textSide= {false}
@@ -151,16 +151,16 @@ function CommentCaMarche({pageVariants}) {
 
             <CardIntegration
               number = "9"
-              top = "77.5%"
-              left = "57.5%"
+              top = "103.5vw"
+              left = "58vw"
               text =  {texts[8]}
               textSide= {true}
             />
 
             <CardIntegration
               number = "10"
-              top = "85%"
-              left = "46%"
+              top = "113vw"
+              left = "46vw"
               text =  {texts[8]}
               textSide= {true}
             />

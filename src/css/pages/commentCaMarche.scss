@@ -84,7 +84,7 @@
   }
 
   .commentCaMarche-integration {
-    height: 270vh;
+    height: 128.6vw;
     width: 100%;
     background:rgb(255, 186, 0);
 
@@ -94,12 +94,13 @@
       position: relative;
 
       .integaration-string-image {
+        width: 90%;
         width: 75%;
         margin: 0 auto;
 
         img {
           position: absolute;
-          margin-top: 10%;
+          margin-top: 10vw;
           left: 10%;
           width: 80%;
         }
@@ -109,16 +110,22 @@
 
         img {
           position: absolute;
-          width: 130%;
-          top: 35%;
-          left: -40%;
+          width: 120vw;
+          top: 51.3vw;
+          left: -35vw;
           z-index: 1;
         }
       }
 
       .integration-title {
 
-        padding-top: 50px;
+        padding-top: 8vw;
+        margin-left: 13vw;
+        width: 70vw;
+        h2 {
+          font-size: 34px;
+          font-weight: 500;
+        }
       }
 
       .integration-step {
