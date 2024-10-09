@@ -1,0 +1,84 @@
+.commentCaMarche-container{
+
+  .commentCaMarche-presentation {
+    height: 75vh;
+    width: 100%;
+    background-color: rgba(242,221,198,0.81);
+    display: flex;
+
+    .presentation-left {
+      width: 50%;
+      height: 100%;
+      .left-content {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 170px;
+
+        h2 {
+          width: 75%;
+          font-size: 48px;
+          font-weight: 500;
+        }
+
+        p {
+          width: 75%;
+          font-size: 18px;
+          margin-top: 5px;
+          padding-bottom: 40px;
+          font-weight: 500;
+        }
+
+        a{
+          font-size: 20px;
+          text-decoration: none;
+          color: black;
+          padding: 10px 15px;
+          background-color: rgb(255, 186, 0);
+          border-radius: 30px;
+          transition: 0.4s ease;
+
+          &:hover {
+            background-color: rgb(255, 170, 0);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+          }
+
+        }
+      }
+    }
+
+    .presentation-right {
+      width: 50%;
+      height: 100%;
+
+      background-image: url(https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984575/LightKitch/xdwonder_A_hand_with_an_iPhone_taking_a_photo_of_a_dish_in_a_Me_466a15bb-0988-4229-bf36-67afa0c6ed68-1_etgpm5.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+    }
+  }
+
+  .commentCaMarche-promotion {
+
+    width: 100%;
+    height: 25vh;
+    margin: 0 auto;
+    background-color: rgba(48, 48, 48, 1);
+
+    .promotion-content {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      margin: 0 auto;
+      color: white;
+
+      p{
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+    }
+  }
+}
