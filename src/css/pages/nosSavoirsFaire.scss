@@ -1,0 +1,91 @@
+.nosSavoirsFaire-container {
+
+  .nosSavoirsFaire-presentation {
+    height: 75vh;
+    width: 100%;
+    background-color: rgba(242,221,198,0.81);
+    display: flex;
+    overflow: hidden;
+
+    .presentation-right {
+
+      width: 50%;
+      height: 100%;
+
+      .right-content {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 170px;
+
+        h2 {
+          width: 75%;
+          font-size: 48px;
+          font-weight: 500;
+        }
+
+        p {
+          width: 75%;
+          font-size: 18px;
+          margin-top: 5px;
+          padding-bottom: 40px;
+          font-weight: 500;
+        }
+
+        a{
+          font-size: 20px;
+          text-decoration: none;
+          color: black;
+          padding: 10px 15px;
+          background-color: rgb(255, 186, 0);
+          border-radius: 30px;
+          transition: 0.4s ease;
+
+          &:hover {
+            background-color: rgb(255, 170, 0);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+          }
+
+        }
+      }
+    }
+
+    .presentation-left {
+      width: 50%;
+      height: 100%;
+
+      background-image: url(https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984564/LightKitch/danfelbm_the_interior_of_the_restaurant_with_people_having_di_10ba21c7-4528-4b11-9661-5977d81f63fb_0-1_ctqhim.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+    }
+  }
+
+  .nosSavoirsFaire-promotion {
+
+    width: 100%;
+    padding-bottom: 40px;
+    background-color: rgba(48, 48, 48, 1);
+
+    .promotion-title {
+      height: 100%;
+      width: 90%;
+      margin: 0 auto;
+      padding: 40px 0 20px 0;
+      color: white;
+
+      p{
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+    }
+
+    .promotion-cards {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+  }
+
+}
