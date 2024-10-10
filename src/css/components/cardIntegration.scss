@@ -3,7 +3,6 @@
   width: 35%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background: transparent;
   position: absolute;
 
@@ -22,10 +21,9 @@
   }
 
   .cardIntegration-right {
-    width: 80%;
+    width: 90%;
     color: black;
     background: transparent;
-    margin-left: 20px;
     font-size: 20px;
   }
 }

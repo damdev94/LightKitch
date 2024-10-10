@@ -1,0 +1,34 @@
+.cardSavoirFaire-container {
+  position: relative;
+  display: flex;
+  z-index: 1;
+  height: 40vw;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  overflow: hidden;
+
+  .cardSavoirFaire-left {
+    width: 50%;
+
+    .text {
+      padding-top: 17vw;
+      padding-left: 5vw;
+      padding-right: 5vw;
+      font-size: 22px;
+    }
+  }
+
+  .cardSavoirFaire-right {
+
+    height: 100%;
+    width: 50%;
+
+  }
+
+  .rotate-background {
+    transform: rotate(10deg);
+    transform-origin: left;
+    overflow: hidden;
+}
+}

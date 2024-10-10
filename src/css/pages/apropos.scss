@@ -1,0 +1,84 @@
+.apropos-container {
+  width: 100;
+
+  .apropos-top {
+    height: 60vw;
+    width: 100%;
+    background-image: url("https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984569/LightKitch/img3-1-scaled_qn0ydv.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 90%;
+    position: relative;
+
+      .apropos-title {
+        position: relative;
+        top: 0;
+        height: 21vw;
+        width: 100%;
+        background: linear-gradient(to right, #2f2f2f, #050505);
+        color: white;
+        padding-top: 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+          font-size: 46px;
+          font-weight: 500;
+        }
+
+        p {
+          font-size: 18px;
+          padding-top: 5px;
+        }
+      }
+
+      .apropos-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 20vw;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to right, rgb(255, 186, 0), rgb(255, 170, 0));
+
+        p {
+          width: 80%;
+          margin: 0 auto;
+          margin-bottom: 20px;
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+
+      .apropos-button {
+        .appointement {
+
+          position: relative;
+          top: 8vw;
+          left: 42.5%;
+          padding: 10px 15px;
+          background-color: rgb(255, 186, 0);
+          text-decoration: none;
+          color: black;
+          font-size: 26px;
+          border-radius: 30px;
+
+          &:hover {
+            background-color: rgb(255, 170, 0);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.6);
+          }
+        }
+      }
+    }
+
+  .apropos-marquee {
+    .marqueeComponent-container {
+      margin-top: 0;
+    }
+
+  }
+}
