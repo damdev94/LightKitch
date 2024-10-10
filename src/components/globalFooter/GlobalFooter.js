@@ -18,7 +18,7 @@ function GlobalFooter() {
       </div>
 
       <div className='marquee-container'>
-          <MarqueeComponent />
+          <MarqueeComponent backgroundColor='rgba(255, 180, 0, 1)' color= 'black'/>
       </div>
 
       <div className='deliveryPlatforms-container' >

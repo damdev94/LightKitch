@@ -2,9 +2,9 @@ import React from 'react'
 import Marquee from "react-fast-marquee";
 import '../../../css/components/globalFooter/globalFooterComponent/marqueeComponent.scss'
 
-function MarqueeComponent() {
+function MarqueeComponent({backgroundColor, color}) {
   return (
-    <Marquee className='marqueeComponent-container'>
+    <Marquee className='marqueeComponent-container' style={{backgroundColor: backgroundColor, color : color}}>
       <p className='point'>·</p>
       <p className='word'>Croissance</p>
       <p className='point'>·</p>
