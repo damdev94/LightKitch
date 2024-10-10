@@ -88,4 +88,57 @@
 
   }
 
+  .virtualFranchises-container {
+    height: 40vw;
+    background-color: rgba(242,221,198,0.81);
+
+    .virtualFranchises-content {
+      width: 90%;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+
+      .virtualFranchises-left {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+          width: 60%;
+          font-size: 40px;
+          font-weight: 500;
+          margin-bottom: 20px;
+        }
+
+        p{
+          font-size: 20px;
+          width: 80%;
+          margin-bottom: 50px;
+        }
+
+        a{
+          text-decoration: none;
+          color: black;
+          text-align: center;
+          padding: 10px 15px;
+          background-color: rgb(255, 186, 0);
+          border-radius: 30px;
+          font-size: 20px;
+
+          &:hover {
+            background-color: rgb(255, 170, 0);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+          }
+        }
+      }
+
+      .virtualFranchises-right {
+        width: 50%;
+        height: 100%;
+      }
+    }
+  }
+
 }

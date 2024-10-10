@@ -2,14 +2,9 @@ import React from 'react'
 import '../css/components/cardSavoirFaire.scss'
 import CardIntegration from './CardIntegration'
 
-function CardSavoirFaire({backgroundColor, imageUrl}) {
+function CardSavoirFaire({backgroundColor, imageUrl, textTitle, text, number, backgroundSize, rotateBackground}) {
 
-  const texts = [
-    <>
-    <h2>Qu’est-ce qu’un <strong>restaurant virtuel?</strong></h2>
-    </>
-  ];
-
+console.log(rotateBackground)
   return (
     <div className='cardSavoirFaire-container' style={{backgroundColor: backgroundColor}}>
 
@@ -18,8 +13,8 @@ function CardSavoirFaire({backgroundColor, imageUrl}) {
         <div className="title">
 
           <CardIntegration
-            number='1'
-            text= {texts[0]}
+            number={number}
+            text= {textTitle}
             textSide={true}
             top= '5vw'
             left= '5vw'
@@ -35,7 +30,13 @@ function CardSavoirFaire({backgroundColor, imageUrl}) {
 
       </div>
 
-      <div className="cardSavoirFaire-right" style={{backgroundImage: imageUrl, backgroundSize: 'cover', backgroundPosition: 'center'}}>
+      <div
+        className={`cardSavoirFaire-right ${rotateBackground ? 'rotate-background' : ''}`}
+        style={{
+          backgroundImage: imageUrl,
+          backgroundSize: backgroundSize,
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'}}>
 
       </div>
 

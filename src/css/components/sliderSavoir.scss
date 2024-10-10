@@ -1,0 +1,19 @@
+.carousel-savoir-container {
+  width: 100%; /* Définit la largeur du carrousel */
+  height: 100%;
+  position: relative; /* Pour le positionnement de l'image */
+  overflow: hidden;
+  top: 5vw; /* Cache les débordements */
+}
+
+.savoir-slides {
+  display: flex; /* Utilise Flexbox pour centrer l'image */
+  justify-content: center; /* Centre l'image horizontalement */
+  align-items: center; /* Centre l'image verticalement */
+  height: 100%; /* Prend toute la hauteur du carrousel */
+}
+
+.savoir-slides img {
+  width: 100%; /* Fait que l'image prenne toute la largeur */
+  height: auto; /* Maintient le ratio de l'image */
+}

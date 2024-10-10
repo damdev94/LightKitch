@@ -151,7 +151,7 @@ function CommentCaMarche({pageVariants}) {
 
             <CardIntegration
               number = "9"
-              top = "103.5vw"
+              top = "104vw"
               left = "58vw"
               text =  {texts[8]}
               textSide= {true}

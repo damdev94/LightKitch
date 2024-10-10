@@ -12,13 +12,13 @@ function CardIntegration({number, top, bottom, right, left, text, textSide}) {
             {number}
           </div>
 
-          <div className='cardIntegration-right'>
+          <div className='cardIntegration-right'style={{marginLeft : '20px'}}>
           <p>{text}</p>
           </div>
         </>
       ) :
         <>
-        <div className='cardIntegration-right' style={{textAlign: "end", marginLeft: "10px"}}>
+        <div className='cardIntegration-right' style={{textAlign: "end", marginRight: "20px"}}>
           <p>{text}</p>
         </div>
 
