@@ -1,3 +1,5 @@
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
 .apropos-container {
   width: 100;
 
@@ -80,5 +82,103 @@
       margin-top: 0;
     }
 
+  }
+
+  .business-guidance {
+
+    display: flex;
+
+    .guidance-left{
+      margin: 100px;
+      width: 60%;
+
+      .paragraphes  {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        padding-left: 25px;
+        margin-left: 20px;
+        border-left: 4px solid black;
+
+      }
+
+      .paragraphes * {
+        padding: 15px 20px;
+        font-size: 18px;
+        position: relative;
+
+        &::before {
+          content: "\f111";
+          font-family: "Font Awesome 6 Free";
+          font-weight: 900;
+          position: absolute;
+          top: 30%;
+          left: -40px;
+          display: block;
+          color: black;
+          font-size: 26px;
+        }
+       }
+
+    }
+
+    .guidance-right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40%;
+      margin-bottom: 50px;
+
+      .image-container {
+        position: relative;
+        display: inline-block;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 70%;
+          height: 97.5%;
+          transform: translate(50px, 50px);
+          z-index: -1;
+          background-color:#ffa996;
+        }
+
+        img {
+          background-color: white;
+          border-radius: 30px;
+          width: 250px;
+          display: block;
+          position: relative;
+          margin-left: 100px;
+          margin-right: 50px;
+        }
+      }
+    }
+  }
+
+  .personnal-message {
+    width: 90%;
+    display: flex;
+    margin-bottom: 50px;
+    .personnal-left {
+      display: flex;
+      justify-content: end;
+      padding: 10px 30px 10px 10px;
+      width: 50%;
+
+      img {
+        height: 300px;
+        max-width: 500px;
+      }
+
+    }
+
+    .personnal-right {
+      padding: 10px 10px 10px 30px;
+      width: 50%;
+
+    }
   }
 }
