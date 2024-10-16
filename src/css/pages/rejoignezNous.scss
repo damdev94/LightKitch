@@ -1,0 +1,113 @@
+.rejoignezNous-content {
+
+  .rejoignezNous-top {
+    background-color: #ff9900;
+    overflow: hidden;
+    position: relative;
+
+    .rejoignezNous-title {
+      width: 50vw;
+      position: absolute;
+      text-align: center;
+      top: 13vw;
+      left: 40vw;
+      z-index: 1;
+
+      h1 {
+        font-size: 50px;
+        font-weight: 500;
+      }
+
+      p {
+        margin-top: 1vw;
+        font-size: 18px;
+      }
+    }
+
+    .deliveryMan-image {
+      position: relative;
+      img {
+        position: absolute;
+        top: 7vw;
+        left: 5vw;
+        width: 45vw;
+      }
+    }
+  }
+
+  .rejoignezNous-form {
+
+    height: 38vw;
+    background-color: #343434;
+
+    form {
+      padding: 50px;
+      background-color: rgba(255,255,255,0.34);
+      width: 80vw;
+      margin: 0 auto;
+      position: relative;
+      top: -5vw;
+      border-radius: 10px;
+      backdrop-filter: blur(5px);
+
+      .inputs {
+        display: flex;
+        justify-content: space-between;
+
+        input {
+          width: 48%;
+          height: 50px;
+          padding: 10px;
+          transition: outline 0.1s ease;
+          font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          font-size: 18px;
+
+          &:focus {
+            outline: 3px solid rgb(255, 186, 0);
+          }
+        }
+      }
+
+      textArea {
+        width: 100%;
+        padding: 10px;
+        transition: outline 0.1s ease;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 18px;
+
+        &:focus {
+          outline: 3px solid rgb(255, 186, 0);
+        }
+      }
+
+      button {
+        margin-top: 20px;
+        position: relative;
+        left: 62vw;
+        background-color: #343434;
+        border: 3px solid rgb(255, 186, 0);
+        padding: 10px 15px;
+        border-radius: 50px;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        box-shadow: 0 10px 6px rgba(0, 0, 0, 0.1);
+        transition: 0.4s ease, background-color 0.8s ease;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.05);
+          box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+          background-color: rgb(255, 186, 0);
+        }
+      }
+
+
+    }
+  }
+
+  .marqueeComponent-container {
+    margin-top: 0;
+  }
+
+}

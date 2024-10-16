@@ -1,0 +1,52 @@
+.articleMini-container {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+
+  transition: box-shadow 0.4s ease,  transform 0.4s ease;
+
+      &:hover {
+        transform: translateY(-10px) scale(1.02);
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.35);
+        cursor: pointer;
+      }
+
+  div {
+    padding: 0 20px;
+  }
+
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  img {
+    width: 100%;
+    height: 40%;
+    padding: 0;
+  }
+  .articleMini-title {
+    margin-top: 20px;
+    font-size: 30px;
+    color: black;
+  }
+  .articleMini-infos {
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 2px;
+  }
+  .articleMini-text {
+    width: 100%;                     /* Utilise 100% de la largeur disponible */
+    height: 35%;                   /* Fixez une hauteur à votre convenance */
+    margin-top: 10px;               /* Espace au-dessus */
+    overflow: hidden;                /* Masque le texte qui déborde */
+    color: rgba(0, 0, 0, 0.7);       /* Couleur du texte */
+    text-overflow: ellipsis;         /* Affiche '...' pour le texte qui déborde */
+    display: -webkit-box;            /* Pour les navigateurs basés sur WebKit */
+    display: box;                    /* Utilisation de box pour le modèle flex */
+    -webkit-box-orient: vertical;    /* Définit l'orientation de la boîte */
+    -webkit-line-clamp: 9;           /* Nombre de lignes visibles avant le troncage */
+    line-height: 22px;               /* Hauteur de ligne */
+    max-height: 40%;                /* Ajustez cette valeur en fonction de la hauteur des lignes */
+  }
+}
+
+.blog-articleMini-container * {
+  text-decoration: none;
+}
