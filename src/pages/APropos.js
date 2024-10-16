@@ -1,17 +1,44 @@
-import React from 'react'
+import React, {useRef, useLayoutEffect} from 'react'
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPenToSquare} from '@fortawesome/free-solid-svg-icons';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import '../css/pages/apropos.scss'
 import { Link } from 'react-router-dom';
 import MarqueeComponent from '../components/globalFooter/globalFooterComponents/MarqueeComponent';
 import GlobalFooter from '../components/globalFooter/GlobalFooter'
 
 function APropos({pageVariants}) {
-  return (
-    <motion.div initial="initial" animate="animate" exit="exit" variants={pageVariants} className='apropos-container'>
 
-        <div className="apropos-top">
+  const aproposContainer = useRef();
+  const aproposTop = useRef();
+
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: aproposContainer.current,
+        start: 'top top',
+        end: 'bottom 150px',
+        scrub: 1,
+      },
+    });
+
+    tl.to(aproposTop.current, {  backgroundPosition: 'center 20%', duration: 1 }, 0); // ajuster la hauteur en même temps
+
+    return () => {
+      // Clean up on unmount
+      tl.kill();
+      ScrollTrigger.getAll().forEach(t => t.kill());
+    };
+  }, []);
+
+  return (
+    <motion.div ref={aproposContainer} initial="initial" animate="animate" exit="exit" variants={pageVariants} className='apropos-container' >
+
+        <div className="apropos-top" id='top' style={{ backgroundPosition: 'center 115%' }} ref={aproposTop}>
           <div className="apropos-title">
             <h1>À propos de <strong>nous</strong></h1>
             <p>Le coeur de Light Kitch</p>
@@ -26,7 +53,7 @@ function APropos({pageVariants}) {
             <p>Les multiples partenariats effectués par Light Kitch avec d’autres entreprises permettent de proposer une offre complète aux restaurateurs, que ce soit dans les centres villes, dans les milieux ruraux, ainsi que dans les lieux mal desservis par la livraison.</p>
           </div>
           <div className="apropos-button">
-            <Link to="/rejoignez-nous" className='appointement'>Prendre RDV <FontAwesomeIcon style={{marginLeft : "3px"}} icon={faPenToSquare} /></Link>
+            <Link to="/devenir-partenaire" className='appointement'>Prendre RDV <FontAwesomeIcon style={{marginLeft : "3px"}} icon={faPenToSquare} /></Link>
           </div>
         </div>
 

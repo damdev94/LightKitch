@@ -4,6 +4,7 @@ import GlobalFooter from '../components/globalFooter/GlobalFooter';
 import '../css/pages/commentCaMarche.scss'
 import { Link } from 'react-router-dom';
 import CardIntegration from '../components/CardIntegration';
+import { integrationSteps } from '../data/data'
 
 function CommentCaMarche({pageVariants}) {
 
@@ -45,14 +46,14 @@ function CommentCaMarche({pageVariants}) {
   return (
     <motion.div initial="initial" animate="animate" exit="exit" variants={pageVariants} className='commentCaMarche-container'>
 
-      <div className='commentCaMarche-presentation'>
+      <div className='commentCaMarche-presentation' id='top'>
 
         <div className='presentation-left'>
 
           <div className='left-content'>
             <h2>Comment <strong>ça marche</strong></h2>
             <p>Découvrez comment notre solution clé en main peut transformer votre activité.</p>
-            <Link to='/rejoignez-nous'>Prendre RDV</Link>
+            <Link to='/devenir-partenaire'>Prendre RDV</Link>
           </div>
 
         </div>
@@ -85,86 +86,16 @@ function CommentCaMarche({pageVariants}) {
           </div>
 
           <div className='integration-step'>
-            <CardIntegration
-              number = "1"
-              top = "20vw"
-              left = "7.5vw"
-              text =  {texts[0]}
-              textSide= {true}
-            />
-
-            <CardIntegration
-              number = "2"
-              top = "30vw"
-              left = "30.5vw"
-              text =  {texts[1]}
-              textSide= {true}
-            />
-
-            <CardIntegration
-              number = "3"
-              top = "41.5vw"
-              left = "55vw"
-              text =  {texts[2]}
-              textSide= {true}
-            />
-
-             <CardIntegration
-              number = "4"
-              top = "51vw"
-              left = "38.5vw"
-              text =  {texts[3]}
-              textSide= {true}
-            />
-
-            <CardIntegration
-              number = "5"
-              top = "63.5vw"
-              left = "35vw"
-              text =  {texts[4]}
-              textSide= {false}
-            />
-
-            <CardIntegration
-              number = "6"
-              top = "74vw"
-              left = "57.5vw"
-              text =  {texts[5]}
-              textSide= {false}
-            />
-
-            <CardIntegration
-              number = "7"
-              top = "85vw"
-              left = "57.5vw"
-              text =  {texts[6]}
-              textSide= {false}
-            />
-
-            <CardIntegration
-              number = "8"
-              top = "95vw"
-              left = "57.5%"
-              text =  {texts[7]}
-              textSide= {false}
-            />
-
-            <CardIntegration
-              number = "9"
-              top = "104vw"
-              left = "58vw"
-              text =  {texts[8]}
-              textSide= {true}
-            />
-
-            <CardIntegration
-              number = "10"
-              top = "114vw"
-              left = "46vw"
-              text =  {texts[8]}
-              textSide= {true}
-            />
-
+            {integrationSteps.map((step) => (
+                <CardIntegration
+                  key={step.number}
+                  number={step.number}
+                  top={step.top}
+                  left={step.left}
+                  text={step.text}
+                  textSide={step.textSide}
+                />
+              ))}
           </div>
         </div>
       </div>

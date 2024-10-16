@@ -1,0 +1,30 @@
+.blog-content {
+  margin-top: 140px;
+
+  .blog-container {
+    width: 90%;
+    margin: 0 auto;
+
+
+
+    .blog-title {
+
+      h1 {
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+    }
+    .blog-articleMini-container{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding-bottom: 50px;
+
+    }
+  }
+}

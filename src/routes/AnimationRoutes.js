@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route} from 'react-router-dom'
 import '../css/components/App.scss'
 
 import Home from "../pages/Home"
@@ -9,6 +9,7 @@ import CommentCaMarche from "../pages/CommentCaMarche"
 import NosSavoirsFaire from "../pages/NosSavoirsFaire"
 import RejoignezNous from "../pages/RejoignezNous"
 import Layout from '../components/Layout'
+import ArticleDetails from '../pages/articles/ArticleDetails'
 
 function AnimationRoutes() {
 
@@ -19,19 +20,22 @@ function AnimationRoutes() {
   };
 
   return (
+
   <Routes>
 
-    <Route path='/' element={<Navigate to="/home" replace />} />
-
     <Route path='/' >
-      <Route path='home' element= {<Layout><Home pageVariants={pageVariants}/></Layout>} />
+      <Route path='' element= {<Layout><Home pageVariants={pageVariants}/></Layout>} />
       <Route path='comment-ca-marche' element= {<Layout><CommentCaMarche pageVariants={pageVariants}/></Layout>} />
       <Route path='nos-savoirs-faire' element= {<Layout><NosSavoirsFaire pageVariants={pageVariants}/></Layout>} />
       <Route path='a-propos' element= {<Layout><APropos pageVariants={pageVariants}/></Layout>} />
-      <Route path='rejoignez-nous' element= {<Layout><RejoignezNous pageVariants={pageVariants}/></Layout>} />
+      <Route path='devenir-partenaire' element= {<Layout><RejoignezNous pageVariants={pageVariants}/></Layout>} />
       <Route path='blog' element= {<Layout><Blog pageVariants={pageVariants}/></Layout>} />
+
+      {/* Articles */}
+      <Route path='articles/:id' element= {<Layout><ArticleDetails pageVariants={pageVariants}></ArticleDetails></Layout>} />
     </Route>
   </Routes>
+
   )
 }
 

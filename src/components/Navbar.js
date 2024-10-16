@@ -28,11 +28,11 @@ const Navbar = ({pageVariants}) => {
             <Link to='/comment-ca-marche' className={location.pathname === '/comment-ca-marche' ? 'active' : ''}>Comment ça marche</Link>
             <Link to='/nos-savoirs-faire' className={location.pathname === '/nos-savoirs-faire' ? 'active' : ''}>Nos savoirs-faire</Link>
             <Link to='/a-propos' className={location.pathname === '/a-propos' ? 'active' : ''}>A propos</Link>
-            <Link to='/rejoignez-nous' className={location.pathname === '/rejoignez-nous' ? 'active' : ''}>Rejoignez-nous</Link>
+            <Link to='/devenir-partenaire' className={location.pathname === '/devenir-partenaire' ? 'active' : ''}>Rejoignez-nous</Link>
             <Link to='/blog' className={location.pathname === '/blog' ? 'active' : ''}>Blog</Link>
           </div>
           <div className='nav-appointment'>
-            <Link to='/rejoignez-nous'>Prendre RDV</Link>
+            <Link to='/devenir-partenaire'>Prendre RDV</Link>
           </div>
         </nav>
       </div>

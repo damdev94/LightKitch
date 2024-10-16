@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef, useLayoutEffect } from 'react';
+import React, { useRef, useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { gsap } from "gsap";
@@ -56,10 +56,9 @@ function Home({ pageVariants }) {
   }, []);
 
 
-
   return (
     <motion.div initial="initial" animate="animate" exit="exit" variants={pageVariants} className='home-container'>
-      <div className='background-video-container'>
+      <div className='background-video-container' id='top'>
         <video autoPlay muted loop className="background-video">
           <source src="https://res.cloudinary.com/dt04wtcwf/video/upload/v1727984684/LightKitch/videobg_umr80r.mp4" type="video/mp4" />
           Votre navigateur ne supporte pas la vidéo.
@@ -70,7 +69,7 @@ function Home({ pageVariants }) {
             <p>Élargissez votre clientèle grâce à notre accompagnement d’experts <strong>en plateformes de livraison</strong></p>
 
             <div className='link-overlay'>
-              <Link to="/rejoignez-nous" className='appointement'>Prendre RDV <FontAwesomeIcon style={{marginLeft : "3px"}} icon={faPenToSquare} /></Link>
+              <Link to="/devenir-partenaire" className='appointement'>Prendre RDV <FontAwesomeIcon style={{marginLeft : "3px"}} icon={faPenToSquare} /></Link>
               <Link to="/contactez-nous" className='contact'>Contactez-nous <FontAwesomeIcon className='icon-comment' icon={faComment} style={{marginLeft : "3px"}} /></Link>
             </div>
 
