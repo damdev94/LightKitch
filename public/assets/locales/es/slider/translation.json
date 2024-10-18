@@ -1,0 +1,37 @@
+{
+  "slider": {
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984564/LightKitch/icon1_ynccqo.png",
+        "text": [
+          "Análisis de su situación y de la competencia",
+          "Creación de cuentas adaptadas y personalizadas",
+          "Tarifas preferenciales"
+        ]
+      },
+      {
+        "src": "https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984564/LightKitch/icon2_xbx7ti.png",
+        "text": [
+          "Experiencia y asesoramiento",
+          "Digitalización y optimización del menú",
+          "Mejora del SEO en la aplicación"
+        ]
+      },
+      {
+        "src": "https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984564/LightKitch/icon3_gjulu0.png",
+        "text": [
+          "Gestión del back-office",
+          "Uso de múltiples palancas",
+          "Marketing y respuestas a opiniones de clientes"
+        ]
+      },
+      {
+        "src": "https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984564/LightKitch/icon4_edozlo.png",
+        "text": [
+          "Seguimiento regular de los socios",
+          "Servicio de atención al cliente premium"
+        ]
+      }
+    ]
+  }
+}

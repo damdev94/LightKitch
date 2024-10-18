@@ -1,0 +1,37 @@
+{
+  "slider": {
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984564/LightKitch/icon1_ynccqo.png",
+        "text": [
+          "تحليل وضعك والمنافسة",
+          "إنشاء حسابات مخصصة ومخصصة",
+          "أسعار تفضيلية"
+        ]
+      },
+      {
+        "src": "https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984564/LightKitch/icon2_xbx7ti.png",
+        "text": [
+          "الخبرة والنصائح",
+          "الرقمنة وتحسين القائمة",
+          "تحسين السيو داخل التطبيق"
+        ]
+      },
+      {
+        "src": "https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984564/LightKitch/icon3_gjulu0.png",
+        "text": [
+          "إدارة المكتب الخلفي",
+          "استخدام عدة أدوات",
+          "التسويق والردود على آراء العملاء"
+        ]
+      },
+      {
+        "src": "https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984564/LightKitch/icon4_edozlo.png",
+        "text": [
+          "متابعة دورية للشركاء",
+          "خدمة ما بعد البيع الممتازة"
+        ]
+      }
+    ]
+  }
+}

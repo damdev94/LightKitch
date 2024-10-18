@@ -1,6 +1,9 @@
 import React, {useState} from 'react';
 import Carousel from 'react-multi-carousel';
 import { motion } from 'framer-motion'
+import { useTranslation } from "react-i18next";
+
+
 import 'react-multi-carousel/lib/styles.css';
 import '../css/components/slider.scss';
 
@@ -11,18 +14,20 @@ function Slider() {
     visible: { opacity: 1, y: 0, transition: { duration: 1 } }
   };
 
+  const { t } = useTranslation('slider')
+
   const image1 = {
     src : "https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984564/LightKitch/icon1_ynccqo.png",
-    text : ["Analyse de votre situation et de la concurrence", "Création de comptes adaptés et personnalisés", "Tarifs préférentiels"]};
+    text : [t('slider.images.0.text.0'), t('slider.images.0.text.1'), t('slider.images.0.text.2')]};
   const image2 ={
     src : "https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984564/LightKitch/icon2_xbx7ti.png",
-    text : ["Expertise et conseils", "Digitalisation et optimisation du menu", "Amélioration du référencement In-App"]};
+    text : [t('slider.images.1.text.0'), t('slider.images.1.text.1'), t('slider.images.1.text.2')]};
   const image3 = {
     src : "https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984564/LightKitch/icon3_gjulu0.png",
-    text : ["Gestion du back-office", "Utilisation de multiples leviers", "Marketing et réponses aux avis clients"]};
+    text : [t('slider.images.2.text.0'), t('slider.images.2.text.1'), t('slider.images.2.text.2')]};
   const image4 = {
     src : "https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984564/LightKitch/icon4_edozlo.png",
-    text : ["Suivi régulier des partenaires", "S.A.V. premium"]
+    text : [t('slider.images.3.text.0'), t('slider.images.3.text.1')]
   };
   const data = [image1, image2, image3, image4];
 

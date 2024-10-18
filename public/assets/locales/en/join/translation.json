@@ -1,0 +1,31 @@
+{
+  "join_component": {
+    "header": {
+      "title": "Are you ready to join us?",
+      "description": "Discover the potential of your virtual restaurant",
+      "appointment_link": "Book an appointment"
+    },
+    "menu_container": {
+      "links_container": {
+        "main_menu_title": "Main Menu",
+        "menu_links": [
+          "Virtual Brands",
+          "How it works",
+          "Success Stories",
+          "Blog"
+        ],
+
+        "appointment_button": "Book an appointment"
+      },
+      "form_container": {
+        "form": {
+          "fields": [
+            "Name",
+            "Email"
+          ],
+          "submit_button": "Submit"
+        }
+      }
+    }
+  }
+}

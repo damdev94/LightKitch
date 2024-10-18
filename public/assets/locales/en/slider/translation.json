@@ -1,0 +1,37 @@
+{
+  "slider": {
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984564/LightKitch/icon1_ynccqo.png",
+        "text": [
+          "Analysis of your situation and competition",
+          "Creation of adapted and personalized accounts",
+          "Preferential rates"
+        ]
+      },
+      {
+        "src": "https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984564/LightKitch/icon2_xbx7ti.png",
+        "text": [
+          "Expertise and advice",
+          "Digitization and menu optimization",
+          "Improvement of In-App SEO"
+        ]
+      },
+      {
+        "src": "https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984564/LightKitch/icon3_gjulu0.png",
+        "text": [
+          "Back-office management",
+          "Use of multiple levers",
+          "Marketing and responses to customer reviews"
+        ]
+      },
+      {
+        "src": "https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984564/LightKitch/icon4_edozlo.png",
+        "text": [
+          "Regular partner follow-up",
+          "Premium after-sales service"
+        ]
+      }
+    ]
+  }
+}

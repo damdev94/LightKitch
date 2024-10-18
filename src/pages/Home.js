@@ -6,16 +6,16 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPenToSquare, faComment, faQuoteLeft, faQuoteRight} from '@fortawesome/free-solid-svg-icons';
 import KeyStatsCard from '../components/KeyStatsCard';
-import '../css/pages/home.scss';
 import Slider from '../components/Slider';
 import SkillCard from '../components/LittleSkillCard';
 import GlobalFooter from '../components/globalFooter/GlobalFooter';
+import { useTranslation } from "react-i18next";
+
+import '../css/pages/home.scss';
 
 gsap.registerPlugin(ScrollTrigger);
 
 function Home({ pageVariants }) {
-
-
   const handImage = useRef(null);
   const lightImage = useRef(null);
   const boxImage = useRef(null);
@@ -55,6 +55,7 @@ function Home({ pageVariants }) {
     });
   }, []);
 
+  const { t } = useTranslation('homepage')
 
   return (
     <motion.div initial="initial" animate="animate" exit="exit" variants={pageVariants} className='home-container'>
@@ -65,12 +66,12 @@ function Home({ pageVariants }) {
         </video>
         <div className='video-overlay'>
           <div className='text-overlay'>
-            <h1>Boostez votre chiffre d’affaires en créant des <strong>restaurants virtuels</strong></h1>
-            <p>Élargissez votre clientèle grâce à notre accompagnement d’experts <strong>en plateformes de livraison</strong></p>
+            <h1>{t('header.title.0')} <strong>{t('header.title.1.strong')}</strong></h1>
+            <p>{t('header.subtitle.0')} <strong>{t('header.subtitle.1.strong')}</strong></p>
 
             <div className='link-overlay'>
-              <Link to="/devenir-partenaire" className='appointement'>Prendre RDV <FontAwesomeIcon style={{marginLeft : "3px"}} icon={faPenToSquare} /></Link>
-              <Link to="/contactez-nous" className='contact'>Contactez-nous <FontAwesomeIcon className='icon-comment' icon={faComment} style={{marginLeft : "3px"}} /></Link>
+              <Link to="/devenir-partenaire" className='appointement'>{t('header.appointment_link')} <FontAwesomeIcon style={{marginLeft : "3px"}} icon={faPenToSquare} /></Link>
+              <Link to="/contactez-nous" className='contact'>{t('header.contact_link')} <FontAwesomeIcon className='icon-comment' icon={faComment} style={{marginLeft : "3px"}} /></Link>
             </div>
 
           </div>
@@ -81,25 +82,23 @@ function Home({ pageVariants }) {
         <div className='key-stats-container'>
           <div className='key-stats-content'>
           <div className='title'>
-            <h2>Specialiste de plateformes <strong>de livraison</strong></h2>
+            <h2>{t('key_stats_section.title.0')} <strong>{t('key_stats_section.title.1.strong')}</strong></h2>
           </div>
             <div className='stats-cards-container'>
-
               <KeyStatsCard
-                statsText='Potentiel de chiffre d’affaires annuel supplémentaire'
-                stats='750 k€+'
+                statsText={t('key_stats_section.stat1_text')}
+                stats={t('key_stats_section.stat1_value')}
               />
 
               <KeyStatsCard
-                statsText='Jours pour mettre en place votre restaurant virtuel'
-                stats='15'
+                statsText={t('key_stats_section.stat2_text')}
+                stats={t('key_stats_section.stat2_value')}
               />
 
               <KeyStatsCard
-                statsText='Des restaurants partenaires satisfaits'
-                stats='97%'
+                statsText={t('key_stats_section.stat3_text')}
+                stats={t('key_stats_section.stat3_value')}
               />
-
             </div>
           </div>
         </div>
@@ -107,10 +106,10 @@ function Home({ pageVariants }) {
           <div className='advantages-content'>
             <div className='advantages-left'>
               <div className='advantages-title'>
-                <h2>Les avantages de choisir <strong>Light Kitch</strong></h2>
+                <h2>{t('advantages_section.title.0')} <strong>{t('advantages_section.title.1.strong')}</strong></h2>
               </div>
               <div className='advantages-text'>
-                <p>Light Kitch, permet aux restaurants de créer facilement et rapidement des vitrines virtuelles.</p>
+                <p>{t('advantages_section.text')}</p>
               </div>
               <div className='advantages-slider'>
                 <Slider></Slider>
@@ -128,25 +127,25 @@ function Home({ pageVariants }) {
           <div className='skills-content'>
             <SkillCard
               img ="https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984561/LightKitch/2149371197_elzcop.jpg"
-              title = "Expertise en optimisation des résultats"
-              text = "Fort de notre expérience dans les applications de livraison, nous nous occupons de tous les leviers pour optimiser vos résultats."
+              title={t('skills_section.skill1.title')}
+              text={t('skills_section.skill1.text')}
               height = "370px"
-              width = "380px"
+              width = "420px"
               top = "80px"
             />
             <SkillCard
               img ="https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984561/LightKitch/2149870751_ejyodf.jpg"
-              title = "Vitrines virtuelles pour restaurants"
-              text = "Light Kitch, permet aux restaurants de créer facilement et rapidement des vitrines virtuelles."
+              title={t('skills_section.skill2.title')}
+              text={t('skills_section.skill2.text')}
               height = "370px"
-              width = "380px"
+              width = "420px"
               top = "200px"
               left = "500px"
             />
              <SkillCard
               img ="https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984560/LightKitch/2149250122_a9xgrz.jpg"
-              title = "Restaurants virtuels sur mesure"
-              text = "Nous proposons des restaurants virtuels imaginés selon les habitudes de consommation de votre zone."
+              title={t('skills_section.skill3.title')}
+              text={t('skills_section.skill3.text')}
               height = "370px"
               width = "380px"
               top = "600px"
@@ -154,8 +153,8 @@ function Home({ pageVariants }) {
             />
              <SkillCard
               img ="https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984560/LightKitch/2148145553_ok0d56.jpg"
-              title = "La livraison, avenir de la restauration"
-              text = "La livraison a changé les modes de consommation et se présente comme l’avenir de la restauration."
+              title={t('skills_section.skill4.title')}
+              text={t('skills_section.skill4.text')}
               height = "370px"
               width = "380px"
               top = "1000px"
@@ -163,8 +162,8 @@ function Home({ pageVariants }) {
             />
             <SkillCard
               img ="https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984561/LightKitch/2149834253_kkevob.jpg"
-              title = "Nouveaux canaux de vente"
-              text = "Ce concept permet à votre restaurant, qu’il soit déjà présent ou non sur ces plateformes, de livrer les produits via de nouveaux canaux de vente."
+              title={t('skills_section.skill5.title')}
+              text={t('skills_section.skill5.text')}
               height = "400px"
               width = "440px"
               top = "1400px"
@@ -172,8 +171,8 @@ function Home({ pageVariants }) {
             />
             <SkillCard
               img ="https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984561/LightKitch/2149893725_ghqrp6.jpg"
-              title = "Augmentez votre chiffre d’affaires et votre clientèle"
-              text = "Ces vitrines virtuelles vous offriront la possibilité de générer plus de chiffre d’affaires et d’acquérir une clientèle supplémentaire."
+              title={t('skills_section.skill6.title')}
+              text={t('skills_section.skill6.text')}
               height = "400px"
               width = "440px"
               top = "1500px"
@@ -209,15 +208,13 @@ function Home({ pageVariants }) {
             </div>
             <div className='brahim-right'>
               <div className='brahim-title'>
-                <h2>Ce que Brahim pense de nous</h2>
+                <h2>{t('testimonials_section.brahim_feedback.title')}</h2>
               </div>
               <div className='brahim-text'>
-
-                <p><FontAwesomeIcon icon={faQuoteLeft} className='quoteLeft'/>Light Kitch est une très belle découverte, qui nous a amené à la conquête d’une nouvelle clientèle. Grâce à leurs conseils et à leur expertise, l’équipe nous a accompagné dans une période compliquée pour la restauration. Light Kitch a mis en lumière le potentiel de ma livraison, merci.<FontAwesomeIcon icon={faQuoteRight} className='quoteRight'/></p>
-
+                <p><FontAwesomeIcon icon={faQuoteLeft} className='quoteLeft'/>{t('testimonials_section.brahim_feedback.text.0.quote')}<FontAwesomeIcon icon={faQuoteRight} className='quoteRight'/></p>
               </div>
               <div className='brahim-testimonial'>
-                <p>— Brahim, restaurateur possédant plusieurs comptes optimisés par Light Kitch, sur les différentes applications de livraison.</p>
+                <p>— {t('testimonials_section.brahim_feedback.author')}</p>
               </div>
             </div>
         </div>
@@ -226,15 +223,15 @@ function Home({ pageVariants }) {
           <div className='elriadh-content'>
             <div className='elriadh-left'>
               <div className='elriadh-title'>
-                <h2>Ce que Mohamed pense de nous</h2>
+                <h2>{t('testimonials_section.elriadh_feedback.title')}</h2>
               </div>
               <div className='elriadh-text'>
-                <p><FontAwesomeIcon icon={faQuoteLeft} className='quoteLeft'/>Grâce à Light Kitch on a pu multiplier le nombre de ventes. On a touché une nouvelle clientèle et ça nous a permis de gagner en notoriété, on était déjà connus à Lille mais maintenant encore plus ! Les tablettes sonnent tout le temps et ça fait plaisir</p>
+                <p><FontAwesomeIcon icon={faQuoteLeft} className='quoteLeft'/>{t('testimonials_section.elriadh_feedback.text.0.quote')}</p>
                 <br/>
-                <p>À chaque fois qu’on les appelle ils sont là, le service est nickel. Je continuerai avec Light Kitch avec grand plaisir !<FontAwesomeIcon icon={faQuoteRight} className='quoteRight'/></p>
+                <p>{t('testimonials_section.elriadh_feedback.text.1.quote')}<FontAwesomeIcon icon={faQuoteRight} className='quoteRight'/></p>
               </div>
               <div className='elriadh-testimonial'>
-                <p>— Le témoignage de Mohamed Lille</p>
+                <p>— {t('testimonials_section.elriadh_feedback.author')}</p>
               </div>
             </div>
 
