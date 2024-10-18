@@ -10,7 +10,7 @@ import { articlesData } from '../data/data';
 function Blog({pageVariants}) {
 
   return (
-    <motion.div initial="initial" animate="animate" exit="exit" variants={pageVariants} className='blog-content' >
+    <motion.div id='top' initial="initial" animate="animate" exit="exit" variants={pageVariants} className='blog-content'>
 
         <div className="blog-container" >
 

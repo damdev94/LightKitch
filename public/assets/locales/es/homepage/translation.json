@@ -1,0 +1,90 @@
+{
+  "header": {
+    "title": [
+      "Impulsa tu facturación creando",
+      {
+        "strong": "restaurantes virtuales"
+      }
+    ],
+    "subtitle": [
+      "Amplía tu clientela gracias a nuestro acompañamiento de expertos",
+      {
+        "strong": "en plataformas de entrega"
+      }
+    ],
+    "appointment_link": "Pedir cita",
+    "contact_link": "Contáctanos"
+  },
+  "key_stats_section": {
+    "title": [
+      "Especialista en plataformas",
+      {
+        "strong": "de entrega"
+      }
+    ],
+    "stat1_text": "Potencial de ingresos anuales adicionales",
+    "stat1_value": "750 k€+",
+    "stat2_text": "Días para implementar tu restaurante virtual",
+    "stat2_value": "15",
+    "stat3_text": "Restaurantes asociados satisfechos",
+    "stat3_value": "97%"
+  },
+  "advantages_section": {
+    "title": [
+      "Las ventajas de elegir",
+      {
+        "strong": "Light Kitch"
+      }
+    ],
+    "text": "Light Kitch permite a los restaurantes crear fácilmente y rápidamente vitrinas virtuales."
+  },
+  "skills_section": {
+    "skill1": {
+      "title": "Experiencia en optimización de resultados",
+      "text": "Con nuestra experiencia en aplicaciones de entrega, nos ocupamos de todos los factores para optimizar tus resultados."
+    },
+    "skill2": {
+      "title": "Vitrinas virtuales para restaurantes",
+      "text": "Light Kitch permite a los restaurantes crear fácilmente y rápidamente vitrinas virtuales."
+    },
+    "skill3": {
+      "title": "Restaurantes virtuales a medida",
+      "text": "Ofrecemos restaurantes virtuales diseñados según los hábitos de consumo de tu zona."
+    },
+    "skill4": {
+      "title": "La entrega, el futuro de la restauración",
+      "text": "La entrega ha cambiado los modos de consumo y se presenta como el futuro de la restauración."
+    },
+    "skill5": {
+      "title": "Nuevos canales de venta",
+      "text": "Este concepto permite a tu restaurante, ya esté presente o no en estas plataformas, entregar productos a través de nuevos canales de venta."
+    },
+    "skill6": {
+      "title": "Aumenta tu facturación y tu clientela",
+      "text": "Estas vitrinas virtuales te ofrecerán la posibilidad de generar más ingresos y adquirir una clientela adicional."
+    }
+  },
+  "testimonials_section": {
+    "brahim_feedback": {
+      "title": "Lo que Brahim piensa de nosotros",
+      "text": [
+        {
+          "quote": "Light Kitch es un gran descubrimiento que nos ha llevado a conquistar una nueva clientela. Gracias a sus consejos y a su experiencia, el equipo nos ha acompañado en un periodo complicado para la restauración. Light Kitch ha puesto de relieve el potencial de mi entrega, gracias."
+        }
+      ],
+      "author": "Brahim, restaurador que posee varias cuentas optimizadas por Light Kitch en diferentes aplicaciones de entrega."
+    },
+    "elriadh_feedback": {
+      "title": "Lo que Mohamed piensa de nosotros",
+      "text": [
+        {
+          "quote": "Gracias a Light Kitch hemos podido multiplicar el número de ventas. Hemos llegado a una nueva clientela y eso nos ha permitido ganar notoriedad; ya éramos conocidos en Lille, ¡pero ahora aún más! Las tabletas suenan todo el tiempo y es un placer."
+        },
+        {
+          "quote": "Cada vez que los llamamos, están ahí; el servicio es impecable. ¡Seguiré con Light Kitch con mucho gusto!"
+        }
+      ],
+      "author": "El testimonio de Mohamed de Lille"
+    }
+  }
+}

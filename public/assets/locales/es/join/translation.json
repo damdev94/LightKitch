@@ -1,0 +1,31 @@
+{
+  "join_component": {
+    "header": {
+      "title": "¿Estás listo para unirte a nosotros?",
+      "description": "Descubre el potencial de tu restaurante virtual",
+      "appointment_link": "Reservar una cita"
+    },
+    "menu_container": {
+      "links_container": {
+        "main_menu_title": "Menú principal",
+        "menu_links": [
+          "Marcas virtuales",
+          "Cómo funciona",
+          "Historias de éxito",
+          "Blog"
+        ],
+
+        "appointment_button": "Reservar una cita"
+      },
+      "form_container": {
+        "form": {
+          "fields": [
+            "Nombre",
+            "Correo electrónico"
+          ],
+          "submit_button": "Enviar"
+        }
+      }
+    }
+  }
+}

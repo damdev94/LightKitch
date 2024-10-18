@@ -1,0 +1,90 @@
+{
+  "header": {
+        "title": [
+          "Boost your revenue by creating",
+          {
+            "strong": "virtual restaurants"
+          }
+        ],
+        "subtitle": [
+          "Expand your customer base with our expert support",
+          {
+            "strong": "on delivery platforms"
+          }
+        ],
+        "appointment_link": "Book an Appointment",
+        "contact_link": "Contact Us"
+  },
+  "key_stats_section": {
+        "title": [
+          "Delivery platform",
+          {
+            "strong": "specialist"
+          }
+        ],
+        "stat1_text": "Potential additional annual revenue",
+        "stat1_value": "750k€+",
+        "stat2_text": "Days to set up your virtual restaurant",
+        "stat2_value": "15",
+        "stat3_text": "Satisfied partner restaurants",
+        "stat3_value": "97%"
+  },
+  "advantages_section": {
+        "title": [
+          "The advantages of choosing",
+          {
+            "strong": "Light Kitch"
+          }
+        ],
+        "text": "Light Kitch allows restaurants to easily and quickly create virtual storefronts."
+  },
+  "skills_section": {
+        "skill1": {
+          "title": "Expertise in optimizing results",
+          "text": "With our experience in delivery apps, we handle all the levers to optimize your results."
+        },
+        "skill2": {
+          "title": "Virtual storefronts for restaurants",
+          "text": "Light Kitch allows restaurants to easily and quickly create virtual storefronts."
+        },
+        "skill3": {
+          "title": "Custom virtual restaurants",
+          "text": "We offer virtual restaurants designed based on the consumption habits of your area."
+        },
+        "skill4": {
+          "title": "Delivery, the future of the food industry",
+          "text": "Delivery has changed consumption habits and is the future of the food industry."
+        },
+        "skill5": {
+          "title": "New sales channels",
+          "text": "This concept allows your restaurant, whether already present or not on these platforms, to deliver products via new sales channels."
+        },
+        "skill6": {
+          "title": "Increase your revenue and customer base",
+          "text": "These virtual storefronts will give you the opportunity to generate more revenue and acquire additional customers."
+        }
+  },
+  "testimonials_section": {
+        "brahim_feedback": {
+          "title": "What Brahim thinks of us",
+          "text": [
+            {
+              "quote": "Light Kitch is a great discovery, which has brought us a new customer base. Thanks to their advice and expertise, the team supported us through a difficult time for the food industry. Light Kitch highlighted the potential of my delivery service, thank you."
+            }
+          ],
+          "author": "Brahim, a restaurateur with multiple accounts optimized by Light Kitch on various delivery apps."
+        },
+        "elriadh_feedback": {
+          "title": "What Mohamed thinks of us",
+          "text": [
+            {
+              "quote": "Thanks to Light Kitch, we were able to multiply our sales. We reached a new customer base, which helped us gain recognition. We were already known in Lille, but now even more! The tablets are constantly ringing, and it's great."
+            },
+            {
+              "quote": "Whenever we call them, they're there. The service is perfect. I'll gladly continue working with Light Kitch!"
+            }
+          ],
+          "author": "Testimonial from Mohamed, Lille"
+        }
+  }
+}
