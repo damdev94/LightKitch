@@ -1,0 +1,138 @@
+{
+  "header": {
+    "title": [
+      "Comment",
+      {
+        "strong": "ça marche"
+      }
+    ],
+    "subtitle": [
+      "Découvrez comment notre solution clé en main peut transformer votre activité."
+    ],
+    "appointment_link": "Prendre RDV",
+    "contact_link": "Contactez-nous"
+  },
+  "promotion_section": {
+    "text": "Propulsez votre restaurant vers de nouveaux sommets grâce à Light Kitch, votre partenaire expert en restaurants virtuels. Nous nous occupons de tout, de la création de marques virtuelles sur mesure à l’optimisation de vos menus et de vos campagnes marketing, afin de maximiser votre visibilité et vos revenus sur les plateformes de livraison."
+  },
+  "integration_section": {
+    "title": [
+      "Comment propulser votre restaurant vers le succès sur les",
+      {
+        "strong": "applications de livraison"
+      },
+      "?"
+    ],
+    "steps": [
+      {
+        "number": 1,
+        "text": [
+          "Sélection des",
+          {
+            "strong": "types de cuisine"
+          },
+          " par nos experts, selon la concurrence, votre situation et vos besoins."
+        ]
+      },
+      {
+        "number": 2,
+        "text": [
+          "Prise en charge des",
+          {
+            "strong": "démarches administratives"
+          },
+          " des plateformes de livraison. Analyse de votre situation et de la concurrence. Création de",
+          {
+            "strong": "comptes adaptés et personnalisés"
+          },
+          "."
+        ]
+      },
+      {
+        "number": 3,
+        "text": [
+          "Envoi du",
+          {
+            "strong": "matériel pour gérer la livraison"
+          },
+          " de vos restaurants virtuels."
+        ]
+      },
+      {
+        "number": 4,
+        "text": [
+          "Amélioration du menu pour avoir un aspect attractif selon la plateforme de livraison. ",
+          {
+            "strong": "Expertise et conseils, digitalisation et optimisation du menu"
+          },
+          "."
+        ]
+      },
+      {
+        "number": 5,
+        "text": [
+          "Gestion du",
+          {
+            "strong": "Back-Office. Configuration, optimisation et activation"
+          },
+          " des comptes."
+        ]
+      },
+      {
+        "number": 6,
+        "text": [
+          "Activation de différents",
+          {
+            "strong": "leviers de visibilité"
+          },
+          " in-app."
+        ]
+      },
+      {
+        "number": 7,
+        "text": [
+          {
+            "strong": "BOOST: Suivi des commandes et mise en place d’offres Marketing"
+          },
+          " afin de booster au maximum vos ventes."
+        ]
+      },
+      {
+        "number": 8,
+        "text": [
+          "Analyse des",
+          {
+            "strong": "résultats"
+          },
+          ", réponse aux",
+          {
+            "strong": "avis clients"
+          },
+          " et échanges avec le restaurant en cas de besoin."
+        ]
+      },
+      {
+        "number": 9,
+        "text": [
+          {
+            "strong": "Suivi régulier"
+          },
+          " par le support de Light Kitch et ",
+          {
+            "strong": "SAV Premium"
+          },
+          "."
+        ]
+      },
+      {
+        "number": 10,
+        "text": [
+          {
+            "strong": "Paiement en une seule facture détaillée"
+          },
+          " regroupant toutes les plateformes."
+        ]
+      }
+    ]
+  }
+}

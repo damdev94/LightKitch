@@ -234,94 +234,95 @@ export const articlesData = [
   },
 ];
 
-export const integrationSteps = [
+export const getIntegrationSteps = (t, langageCode) => [
+
   {
     number: "1",
     text: <>
-      Sélection des <strong>types de cuisine</strong> par nos experts, selon la concurrence, votre situation et vos besoins.
+      {t('integration_section.steps.0.text.0')} <strong>{t('integration_section.steps.0.text.1.strong')}</strong> {t('integration_section.steps.0.text.2')}
     </>,
-    textSide: true,
+    textSide: langageCode === 'ar' ? false : true,
     top: "20vw",
     left: "7.5vw"
   },
   {
     number: "2",
     text: <>
-      Prise en charge des <strong>démarches administratives</strong> des plateformes de livraison. Analyse de votre situation et de la concurrence. Création de <strong>comptes adaptés et personnalisés.</strong>
+      {t('integration_section.steps.1.text.0')} <strong>{t('integration_section.steps.1.text.1.strong')}</strong> {t('integration_section.steps.1.text.2')} <strong>{t('integration_section.steps.1.text.3.strong')}</strong>
     </>,
-    textSide: true,
+    textSide: langageCode === 'ar' ? false : true,
     top: "30vw",
     left: "30.5vw"
   },
   {
     number: "3",
     text: <>
-      Envoi du <strong>matériel pour gérer la livraison</strong> de vos restaurants virtuels.
+      {t('integration_section.steps.2.text.0')} <strong>{t('integration_section.steps.2.text.1.strong')}</strong> {t('integration_section.steps.2.text.2')}
     </>,
-    textSide: true,
+    textSide: langageCode === 'ar' ? false : true,
     top: "41.5vw",
     left: "55vw"
   },
   {
     number: "4",
     text: <>
-      Amélioration du menu pour avoir un aspect attractif selon la plateforme de livraison. <strong>Expertise et conseils, digitalisation et optimisation du menu.</strong>
+      {t('integration_section.steps.3.text.0')} <strong>{t('integration_section.steps.3.text.1.strong')}</strong>
     </>,
-    textSide: true,
+    textSide: langageCode === 'ar' ? false : true,
     top: "51vw",
     left: "38.5vw"
   },
   {
     number: "5",
     text: <>
-      Gestion du <strong>Back-Office. Configuration, optimisation et activation</strong> des comptes.
+      {t('integration_section.steps.4.text.0')} <strong>{t('integration_section.steps.4.text.1.strong')}</strong> {t('integration_section.steps.4.text.2')}
     </>,
-    textSide: false,
+    textSide: langageCode === 'ar' ? true : false,
     top: "63.5vw",
     left: "35vw"
   },
   {
     number: "6",
     text: <>
-      Activation de différents <strong>leviers de visibilité</strong> in-app.
+      {t('integration_section.steps.5.text.0')} <strong>{t('integration_section.steps.5.text.1.strong')}</strong>
     </>,
-    textSide: false,
+    textSide: langageCode === 'ar' ? true : false,
     top: "74vw",
     left: "57.5vw"
   },
   {
     number: "7",
     text: <>
-      <strong>BOOST: Suivi des commandes et mise en place d’offres Marketing</strong> afin de booster au maximum vos ventes.
+      <strong>{t('integration_section.steps.6.text.0.strong')}</strong> {t('integration_section.steps.6.text.1')}
     </>,
-    textSide: false,
+    textSide: langageCode === 'ar' ? true : false,
     top: "85vw",
     left: "57.5vw"
   },
   {
     number: "8",
     text: <>
-      Analyse des <strong>résultats</strong>, réponse aux <strong>avis clients</strong> et échanges avec le restaurant en cas de besoin.
+      {t('integration_section.steps.7.text.0')} <strong>{t('integration_section.steps.7.text.1.strong')}</strong> {t('integration_section.steps.7.text.2')} <strong>{t('integration_section.steps.7.text.3.strong')}</strong> {t('integration_section.steps.7.text.4')}
     </>,
-    textSide: false,
+    textSide: langageCode === 'ar' ? true : false,
     top: "95vw",
     left: "57.5%"
   },
   {
     number: "9",
     text: <>
-      <strong>Suivi régulier</strong> par le support de Light Kitch et <strong>SAV Premium.</strong>
+      <strong>{t('integration_section.steps.8.text.0.strong')}</strong> {t('integration_section.steps.8.text.1')} <strong>{t('integration_section.steps.8.text.2.strong')}</strong>
     </>,
-    textSide: true,
+    textSide: langageCode === 'ar' ? false : true,
     top: "104vw",
     left: "58vw"
   },
   {
     number: "10",
     text: <>
-      <strong>Paiement en une seule facture détaillée</strong> regroupant toutes les plateformes.
+      <strong>{t('integration_section.steps.9.text.0.strong')}</strong> {t('integration_section.steps.9.text.1')}
     </>,
-    textSide: true,
+    textSide: langageCode === 'ar' ? false : true,
     top: "114vw",
     left: "46vw"
   }

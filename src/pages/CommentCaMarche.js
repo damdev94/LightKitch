@@ -1,46 +1,19 @@
 import React from 'react'
 import { motion } from 'framer-motion';
 import GlobalFooter from '../components/globalFooter/GlobalFooter';
-import '../css/pages/commentCaMarche.scss'
+import { useTranslation } from "react-i18next";
 import { Link } from 'react-router-dom';
 import CardIntegration from '../components/CardIntegration';
-import { integrationSteps } from '../data/data'
+import { getIntegrationSteps } from '../data/data'
+import cookies from 'js-cookie';
+
+import '../css/pages/commentCaMarche.scss'
 
 function CommentCaMarche({pageVariants}) {
 
-  const texts = [
-    <>
-      Sélection des <strong>types de cuisine</strong> par nos experts, selon la concurrence, votre situation et vos besoins.
-    </>,
-    <>
-      Prise en charge des <strong>démarches administratives</strong> des plateformes de livraison. Analyse de votre situation et de la concurrence. Création de <strong> comptes adaptés et personnalisés.</strong>
-    </>,
-    <>
-      Envoi du <strong>matériel pour gérer la livraison </strong> de vos restaurants virtuels.
-    </>,
-    <>
-      Amélioration du menu pour avoir un aspect attractif selon la plateforme de livraison. <strong>Expertise et conseils, digitalisation et optimisation du menu.</strong>
-    </>,
-    <>
-      Gestion du <strong>Back-Office. Configuration, optimisation et activation</strong>des comptes.
-    </>,
-    <>
-      Activation de différents <strong>leviers de visibilité</strong> in-app.
-    </>,
-    <>
-      <strong>BOOST: Suivi des commandes et mise en place d’offres Marketing</strong> afin de booster au maximum vos ventes.
-    </>,
-    <>
-      Analyse des <strong>résultats</strong> réponse aux <strong>avis clients</strong> et échanges avec le restaurant en cas de besoin.
-    </>,
-    <>
-      <strong>Suivi régulier</strong> par le support de Light Kitch et <strong>SAV Premium.</strong>
-    </>,
-    <>
-      <strong>Paiement en une seule facture détaillée </strong> regroupant toutes les plateformes.
-    </>
-
-  ];
+  const { t } = useTranslation('commentCaMarche');
+  const languageCode = cookies.get('i18next');
+  const integrationSteps = getIntegrationSteps(t, languageCode);
 
 
   return (
@@ -51,9 +24,9 @@ function CommentCaMarche({pageVariants}) {
         <div className='presentation-left'>
 
           <div className='left-content'>
-            <h2>Comment <strong>ça marche</strong></h2>
-            <p>Découvrez comment notre solution clé en main peut transformer votre activité.</p>
-            <Link to='/devenir-partenaire'>Prendre RDV</Link>
+            <h2>{t('header.title.0')} <strong>{t('header.title.1.strong')}</strong></h2>
+            <p>{t('header.subtitle.0')}</p>
+            <Link to='/devenir-partenaire'>{t('header.appointment_link')}</Link>
           </div>
 
         </div>
@@ -68,7 +41,7 @@ function CommentCaMarche({pageVariants}) {
 
       <div className='commentCaMarche-promotion'>
         <div className='promotion-content'>
-          <p>Propulsez votre restaurant vers de nouveaux sommets grâce à Light Kitch, votre partenaire expert en restaurants virtuels. Nous nous occupons de tout, de la création de marques virtuelles sur mesure à l’optimisation de vos menus et de vos campagnes marketing, afin de maximiser votre visibilité et vos revenus sur les plateformes de livraison.</p>
+          <p>{t('promotion_section.text')}</p>
         </div>
       </div>
 
@@ -82,7 +55,7 @@ function CommentCaMarche({pageVariants}) {
           </div>
 
           <div className='integration-title'>
-            <h2>Comment propulser votre restaurant vers le succès sur les <strong>applications de livraisons?</strong></h2>
+            <h2>{t('integration_section.title.0')}<strong> {t('integration_section.title.1.strong')}</strong></h2>
           </div>
 
           <div className='integration-step'>
