@@ -1,0 +1,19 @@
+{
+  "titleSection": {
+    "heading": {
+      "strong1": "Boost",
+      "text": "your virtual restaurant to new heights with",
+      "strong2": "Light Kitch"
+    },
+    "paragraph": "Grow your business, optimize your operations, and reach new customers through our virtual restaurant solutions."
+  },
+  "formSection": {
+    "inputs": {
+      "namePlaceholder": "Name",
+      "emailPlaceholder": "Email",
+      "messagePlaceholder": "Message"
+    },
+    "confirmationMessage": "Your message has been sent successfully!",
+    "submitButton": "Submit"
+  }
+}

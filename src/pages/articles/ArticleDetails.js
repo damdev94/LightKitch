@@ -1,8 +1,9 @@
 import React from 'react'
 import { motion } from 'framer-motion';
 import Article from '../../components/blog/articles/article'
-import { articlesData } from '../../data/data';
+import { getArticlesData } from '../../data/data';
 import { useParams } from 'react-router-dom';
+import { useTranslation } from "react-i18next";
 
 export const article1Data = {
   title: 'La Révolution des Restaurants Virtuels',
@@ -62,7 +63,9 @@ export const article1Data = {
 function ArticleDetails({pageVariants}) {
 
   const { id } = useParams();
-  const article = articlesData.find(article => article.id == parseInt(id));
+  const { t } = useTranslation('articles');
+  const articlesData = getArticlesData(t)
+  const article = articlesData.find(article => article.id === parseInt(id));
 
   if (!article) {
     return <div>Article non trouvé</div>;

@@ -2,7 +2,8 @@ import React from 'react'
 import '../../../css/components/blog/article.scss'
 import GlobalFooter from '../../globalFooter/GlobalFooter'
 import { Link } from 'react-router-dom'
-import { articlesData } from '../../../data/data'
+import { getArticlesData } from '../../../data/data'
+import { useTranslation } from "react-i18next";
 
 function Article({
     title,
@@ -11,6 +12,10 @@ function Article({
     image,
     date,
     text }) {
+
+  const { t } = useTranslation('articles');
+  const articlesData = getArticlesData(t)
+
   return (
     <div className='article-content'>
 
@@ -33,7 +38,7 @@ function Article({
             {text}
           </div>
 
-          <div className="article-comment">
+         {/*  <div className="article-comment">
             <h2>Soumettre un commentaire</h2>
             <p>Votre adresse e-mail ne sera pas publiée. Les champs obligatoires sont indiqués par *</p>
             <form>
@@ -53,7 +58,7 @@ function Article({
               </div>
 
             </form>
-          </div>
+          </div> */}
         </div>
 
         <div className="article-sidebar">

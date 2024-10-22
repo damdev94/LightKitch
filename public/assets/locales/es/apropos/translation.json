@@ -1,0 +1,31 @@
+{
+  "apropos": {
+    "title": {
+      "text" : "Acerca de",
+      "strong": "nosotros"
+    },
+    "subtitle": "El corazón de Light Kitch",
+    "text1": "El mercado de entrega de comidas preparadas está en constante expansión, tanto en los centros urbanos como en las áreas rurales. Light Kitch es un equipo joven, dinámico y lleno de ambición que no deja de crecer.",
+    "text2": "Las múltiples asociaciones realizadas por Light Kitch con otras empresas permiten ofrecer una solución completa a los restauradores, tanto en los centros urbanos como en las áreas rurales y en zonas mal atendidas por los servicios de entrega.",
+    "button": "Solicitar una cita",
+
+    "business_guidance": {
+      "paragraph1": "Ofrecemos a los restaurantes la posibilidad de crear vitrinas virtuales de manera fácil y rápida, gracias a nuestra sólida experiencia en aplicaciones de entrega. Nos encargamos de todas las estrategias para optimizar sus resultados, adaptándonos a la ubicación geográfica de su establecimiento para proponer ofertas adecuadas a su futura clientela.",
+      "paragraph2": "Nuestros restaurantes virtuales están diseñados según los hábitos de consumo específicos de su zona, porque entendemos que cada mercado es único.",
+      "paragraph3": "La entrega ha revolucionado las formas de consumo y representa el futuro de la restauración. Nuestro concepto permite a su restaurante, ya sea que esté presente o no en estas plataformas, entregar sus productos a través de nuevos canales de venta.",
+      "paragraph4": "Nuestras vitrinas virtuales le ofrecen una oportunidad sin precedentes de generar más ingresos y adquirir una nueva clientela. Estamos aquí para guiarlo en cada paso del proceso, para que su negocio prospere en este entorno en constante evolución."
+    },
+
+    "personnal_message": {
+      "greeting": "Estimados restauradores,",
+      "paragraph1": "En Light Kitch, nuestra misión es simple: ayudarlo a aumentar sus ventas y a llegar a nuevos clientes gracias a nuestros restaurantes virtuales. Sabemos cuánto ha transformado la entrega los hábitos de consumo, y estamos convencidos de que su peso continuará creciendo en el futuro de la restauración.",
+      "paragraph2": "Entendemos perfectamente los desafíos que enfrenta hoy en la gestión de aplicaciones de entrega. Por eso, nos especializamos en la gestión integral de todas estas plataformas, para liberarlo de esta carga y permitirle concentrarse en lo que mejor sabe hacer: cocinar y satisfacer a sus clientes. El mercado de la entrega de comidas preparadas sigue en constante expansión, tanto en los centros urbanos como en las áreas rurales.",
+      "paragraph3": "Light Kitch es un equipo joven, dinámico y lleno de ambición que no deja de crecer. Siempre disponible y atento, nos adaptamos caso por caso para todos nuestros clientes. Con nuestra experiencia en aplicaciones de entrega, hacemos todo lo posible para optimizar sus resultados. Nuestro equipo se dedica a crear soluciones adaptadas a la ubicación geográfica de su restaurante, teniendo en cuenta los hábitos de consumo de su zona. Ya sea en el centro de la ciudad, en áreas rurales o en zonas mal atendidas por la entrega, contamos con las herramientas y asociaciones necesarias para ofrecerle una solución completa.",
+      "paragraph4": "Nos apasiona nuestro trabajo y estamos impulsados por la ambición de ver a su restaurante prosperar. Al elegir Light Kitch, opta por el crecimiento de sus ingresos y la adquisición de nuevos clientes, mientras se beneficia del crecimiento continuo del mercado de entrega de comidas preparadas.",
+      "closing": "Únase a nosotros en esta aventura y permítanos ayudarle a alcanzar su máximo potencial.",
+      "signoff": "Atentamente,",
+      "signatureName": "Louis Rebattu,",
+      "signature": "CEO y Fundador de Light Kitch"
+    }
+  }
+}

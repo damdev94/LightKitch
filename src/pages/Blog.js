@@ -5,9 +5,15 @@ import '../css/pages/blog.scss'
 import { Link } from 'react-router-dom';
 import MarqueeComponent from '../components/globalFooter/globalFooterComponents/MarqueeComponent';
 import GlobalFooter from '../components/globalFooter/GlobalFooter';
-import { articlesData } from '../data/data';
+import { getArticlesData } from '../data/data';
+import { useTranslation } from "react-i18next";
 
 function Blog({pageVariants}) {
+
+  const { t } = useTranslation('blog');
+  const { t : t2 } = useTranslation('articles');
+
+  const articlesData = getArticlesData(t2)
 
   return (
     <motion.div id='top' initial="initial" animate="animate" exit="exit" variants={pageVariants} className='blog-content'>
@@ -15,8 +21,8 @@ function Blog({pageVariants}) {
         <div className="blog-container" >
 
           <div className="blog-title">
-            <h1>À Table avec <strong>Light Kitch</strong></h1>
-            <p>Actualités, conseils et témoignages pour réussir dans l’univers de la foodtech</p>
+            <h1>{t('heading.text')} <strong>{t('heading.strong')}</strong></h1>
+            <p>{t('paragraph')}</p>
           </div>
 
           <div className="blog-articleMini-container">

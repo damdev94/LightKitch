@@ -5,10 +5,13 @@ import GlobalFooter from '../components/globalFooter/GlobalFooter'
 import emailjs from '@emailjs/browser';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useTranslation } from "react-i18next";
+
 import '../css/pages/rejoignezNous.scss';
 
 function RejoignezNous({pageVariants}) {
 
+  const { t } = useTranslation('rejoignezNous');
   const [isMessageSent, setIsMessageSent] = useState(false)
 
   const form = useRef();
@@ -58,8 +61,8 @@ function RejoignezNous({pageVariants}) {
       <div className="rejoignezNous-top" style={{height: '42vw'}} id='top' ref={rejoignezNousTop}>
 
         <div className="rejoignezNous-title">
-          <h1><strong>Propulsez</strong> votre virtuel restaurant vers de nouveaux sommets avec <strong>Light Kitch</strong></h1>
-          <p>Développez votre activité, optimisez vos opérations et atteignez une nouvelle clientèle grâce à nos solutions de restaurants virtuels.</p>
+          <h1><strong>{t('titleSection.heading.strong1')}</strong> {t('titleSection.heading.text')} <strong>{t('titleSection.heading.strong2')}</strong></h1>
+          <p>{t('titleSection.paragraph')}</p>
         </div>
 
         <div className="deliveryMan-image">
@@ -75,18 +78,18 @@ function RejoignezNous({pageVariants}) {
 
         {isMessageSent ? (
           <div className="message-confirmation">
-            <p>Votre message a été envoyé avec succès !</p>
+            <p>{t('formSection.confirmationMessage')}</p>
           </div>
         ) : (
           <>
             <div className="inputs">
-              <input type='text' name='name' placeholder='Nom' required />
-              <input type='email' name='email' placeholder='Email' required />
+              <input type='text' name='name' placeholder={t('formSection.inputs.namePlaceholder')} required />
+              <input type='email' name='email' placeholder={t('formSection.inputs.emailPlaceholder')} required />
             </div>
             <br/>
-            <textarea name="message" rows="10" placeholder='Message' required />
+            <textarea name="message" rows="10" placeholder={t('formSection.inputs.messagePlaceholder')} required />
             <br/>
-            <button type='submit'>Soumettre</button>
+            <button type='submit'>{t('formSection.submitButton')}</button>
           </>
   )}
 

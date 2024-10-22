@@ -1,0 +1,19 @@
+{
+  "titleSection": {
+    "heading": {
+      "strong1": "Impulsa",
+      "text": "tu restaurante virtual hacia nuevas alturas con",
+      "strong2": "Light Kitch"
+    },
+    "paragraph": "Desarrolla tu negocio, optimiza tus operaciones y llega a una nueva clientela gracias a nuestras soluciones de restaurantes virtuales."
+  },
+  "formSection": {
+    "inputs": {
+      "namePlaceholder": "Nombre",
+      "emailPlaceholder": "Correo electrónico",
+      "messagePlaceholder": "Mensaje"
+    },
+    "confirmationMessage": "¡Tu mensaje ha sido enviado con éxito!",
+    "submitButton": "Enviar"
+  }
+}

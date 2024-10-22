@@ -1,0 +1,84 @@
+{
+  "cardsData": [
+    {
+      "number": "1",
+      "backgroundColor": "rgb(255, 186, 0)",
+      "imageUrl": "url(https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984570/LightKitch/whatis_edtjd5.png)",
+      "textTitle": [
+        "¿Qué es un ",
+        {
+          "strong": "restaurante virtual?"
+        }
+      ],
+      "text": [
+        [
+          "Un restaurante virtual es la vitrina en línea de un establecimiento físico que ofrece exclusivamente comida a domicilio a través de plataformas de pedidos en línea (Ubereats, Deliveroo, LyvEat, etc.)."
+        ],
+        [
+          "Crear un restaurante virtual te permite promocionar fácilmente tu cocina a través de nuevas marcas exclusivamente en línea."
+        ]
+      ],
+      "backgroundSize": "cover"
+    },
+    {
+      "number": "2",
+      "backgroundColor": "rgba(169, 174, 202, 1)",
+      "imageUrl": "url(https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984560/LightKitch/9059760-scaled_legyuv.jpg)",
+      "textTitle": [
+        "¿Por qué los restauradores abren ",
+        {
+          "strong": "restaurantes virtuales?"
+        }
+      ],
+      "text": [
+        [
+          "Los restauradores pueden desarrollar nuevos conceptos desde sus cocinas. Esto permite que tu restaurante, ya sea que esté presente o no en estas plataformas, entregue productos a través de nuevos canales de venta. La creación de vitrinas virtuales te ofrecerá más visibilidad en las plataformas de entrega y, por lo tanto, la posibilidad de generar más ingresos. Así podrás alcanzar una clientela adicional mientras mantienes a tus clientes habituales."
+        ]
+      ],
+      "backgroundSize": "contain"
+    },
+    {
+      "number": "3",
+      "backgroundColor": "rgba(199, 206, 102, 1)",
+      "imageUrl": "url(https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984560/LightKitch/4267558-scaled_kigrhz.jpg)",
+      "textTitle": [
+        "¿Qué tipo de ",
+        {
+          "strong": "menú"
+        },
+        "para las ",
+        {
+          "strong": "cocinas virtuales?"
+        }
+      ],
+      "text": [
+        [
+          "Todos los menús pueden servir como base para los restaurantes virtuales. Nuestros expertos seleccionan los productos más adecuados ofrecidos por los restauradores para crear conceptos innovadores. El objetivo es asegurarse de que el menú sea coherente con las expectativas culinarias de los consumidores en las plataformas de entrega."
+        ]
+      ],
+      "backgroundSize": "60%",
+      "rotateBackground": true
+    },
+    {
+      "number": "4",
+      "backgroundColor": "rgba(63, 173, 192, 1)",
+      "imageUrl": "url(https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984560/LightKitch/1234_uqtwrf.png)",
+      "textTitle": [
+        "¿Cómo ",
+        {
+          "strong": "Light Kitch"
+        },
+        "ayuda a los restaurantes?"
+      ],
+      "text": [
+        [
+          "Light Kitch ayuda a los restaurantes a desempeñarse en las aplicaciones de entrega creando nuevos conceptos bajo la denominación de marcas virtuales."
+        ],
+        [
+          "Light Kitch también gestiona la parte administrativa con las aplicaciones de entrega, optimiza la gestión operativa de los restaurantes virtuales y proporciona análisis y recomendaciones de marketing."
+        ]
+      ],
+      "backgroundSize": "cover"
+    }
+  ]
+}

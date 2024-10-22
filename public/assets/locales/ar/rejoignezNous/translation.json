@@ -1,0 +1,19 @@
+{
+  "titleSection": {
+    "heading": {
+      "strong1": "ادفع",
+      "text": "مطعمك الافتراضي إلى آفاق جديدة مع",
+      "strong2": "Light Kitch"
+    },
+    "paragraph": "قم بتنمية عملك، وتحسين عملياتك، والوصول إلى عملاء جدد بفضل حلول المطاعم الافتراضية الخاصة بنا."
+  },
+  "formSection": {
+    "inputs": {
+      "namePlaceholder": "الاسم",
+      "emailPlaceholder": "البريد الإلكتروني",
+      "messagePlaceholder": "الرسالة"
+    },
+    "confirmationMessage": "تم إرسال رسالتك بنجاح!",
+    "submitButton": "إرسال"
+  }
+}

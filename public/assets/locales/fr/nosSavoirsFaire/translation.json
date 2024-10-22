@@ -1,0 +1,26 @@
+{
+  "presentation_section": {
+    "heading": [
+      "Restaurants",
+      {
+        "strong": "Virtuels"
+      }
+    ],
+    "description": [
+      "Découvrez comment notre solution clé en main peut transformer votre activité"
+    ],
+    "cta_button": "Prendre RDV"
+  },
+  "promotion_section": {
+    "description":
+      "Propulsez votre restaurant vers de nouveaux sommets grâce à ,Light Kitch votre partenaire expert en restaurants virtuels. Nous nous occupons de tout, de la création de marques virtuelles sur mesure à l’optimisation de vos menus et de vos campagnes marketing afin de maximiser votre visibilité et vos revenus sur les plateformes de livraison."
+  },
+  "virtual_franchises_section": {
+    "heading":
+      "Nos franchises virtuels",
+    "description":
+      "Un panel de marques à proposer, clés en main pour les restaurateurs, avec les différents food types.",
+    "cta_button":
+      "Contactez nous pour en savoir plus"
+  }
+}

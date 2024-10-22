@@ -97,6 +97,7 @@ const Navbar = ({pageVariants}) => {
           <div className='nav-links'>
 
             <Link
+              style={{marginLeft: currentLanguageCode ? '15px' : ''}}
               to='/comment-ca-marche'
               className={location.pathname === '/comment-ca-marche' ? 'active' : ''}
             > {t('how_it_works')}

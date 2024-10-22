@@ -1,18 +1,18 @@
-export const cardsData = [
+export const getCardsData = (t) => [
   {
     number: '1',
     backgroundColor: "rgb(255, 186, 0)",
     imageUrl: 'url(https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984570/LightKitch/whatis_edtjd5.png)',
     textTitle: (
       <>
-        <h2>Qu’est-ce qu’un <strong>restaurant virtuel?</strong></h2>
+        <h2>{t('cardsData.0.textTitle.0')} <strong>{t('cardsData.0.textTitle.1.strong')}</strong></h2>
       </>
     ),
     text: (
       <>
-        <p>Un restaurant virtuel est la vitrine en ligne d’un établissement physique, qui propose exclusivement de la nourriture en livraison, via les plateformes de commande en ligne (Ubereats, Deliveroo, LyvEat …).</p>
+        <p>{t('cardsData.0.text.0.0')}</p>
         <br />
-        <p>Créer un restaurant virtuel vous permet de diffuser facilement votre cuisine à travers de nouvelles marques exclusivement en ligne.</p>
+        <p>{t('cardsData.0.text.1.0')}</p>
       </>
     ),
     backgroundSize: 'cover',
@@ -23,12 +23,12 @@ export const cardsData = [
     imageUrl: 'url(https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984560/LightKitch/9059760-scaled_legyuv.jpg)',
     textTitle: (
       <>
-        <h2>Pourquoi les restaurateurs ouvrent-ils des <strong>restaurants virtuels?</strong></h2>
+        <h2>{t('cardsData.1.textTitle.0')} <strong>{t('cardsData.1.textTitle.1.strong')}</strong></h2>
       </>
     ),
     text: (
       <>
-        <p>Les restaurateurs peuvent développer de nouveaux concepts depuis leur cuisine. Cela permet à votre restaurant, qu’il soit déjà présent ou non sur ces plateformes, de livrer ces produits via de nouveaux canaux de vente. La création de vitrines virtuelles vous offrira plus de visibilité sur les plateformes de livraison et donc la possibilité de générer plus de chiffre d'affaire. Ainsi vous pourrez atteindre une clientèle supplémentaire, tout en conservant votre clientèle habituelle.</p>
+        <p>{t('cardsData.1.text.0.0')}</p>
       </>
     ),
     backgroundSize: 'contain',
@@ -39,12 +39,12 @@ export const cardsData = [
     imageUrl: 'url(https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984560/LightKitch/4267558-scaled_kigrhz.jpg)',
     textTitle: (
       <>
-        <h2>Quel type de <strong>menu</strong> pour les <strong>cuisines virtuelles?</strong></h2>
+        <h2>{t('cardsData.2.textTitle.0')} <strong>{t('cardsData.2.textTitle.1.strong')}</strong> {t('cardsData.2.textTitle.2')} <strong>cuisines virtuelles?</strong></h2>
       </>
     ),
     text: (
       <>
-        <p>Tous les menus peuvent servir de base aux restaurants virtuels, nos experts sélectionnent les produits les plus adéquats proposés par les restaurateurs pour leur créer des concepts innovants. L’objectif est de faire en sorte que le menu soit cohérent avec les attentes culinaires des consommateurs sur les plateformes de livraison.</p>
+        <p>{t('cardsData.2.text.0.0')}</p>
       </>
     ),
     backgroundSize: '60%',
@@ -56,178 +56,190 @@ export const cardsData = [
     imageUrl: 'url(https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984560/LightKitch/1234_uqtwrf.png)',
     textTitle: (
       <>
-        <h2>Comment <strong>Light Kitch</strong> aide-t-il les restaurants?</h2>
+        <h2>{t('cardsData.3.textTitle.0')} <strong>{t('cardsData.3.textTitle.1.strong')}</strong> {t('cardsData.3.textTitle.2')}</h2>
       </>
     ),
     text: (
       <>
-        <p>Light Kitch aide les restaurants à performer sur les applications de livraison en créant de nouveaux concepts sous la dénomination de marques virtuelles.</p>
+        <p>{t('cardsData.3.text.0.0')}</p>
         <br />
-        <p>Light Kitch gère également la partie administrative auprès des applications de livraison, optimise la gestion opérationnelle des restaurants virtuels et prévoit aussi des analyses et des préconisations marketing.</p>
+        <p>{t('cardsData.3.text.1.0')}</p>
       </>
     ),
     backgroundSize: 'cover',
   },
 ];
 
-export const articlesData = [
+export const getArticlesData = (t) => [
   {
     id: 1,
-    title: 'La Révolution des Restaurants Virtuels',
-    author: 'Admin',
-    category: 'Uncategorized',
+    title: t('articles.0.title'),
+    author: t('articles.0.author'),
+    category: t('articles.0.category'),
     image: 'https://res.cloudinary.com/dt04wtcwf/image/upload/v1728907319/LightKitch/article1_s7har4.jpg',
-    date: 'May 20, 2024',
+    date: t('articles.0.date'),
     text: (
       <>
-        <p>Dans un monde de plus en plus numérique, les applications de livraison de repas ont radicalement transformé l’industrie de la restauration. Des plateformes telles que <strong>Uber Eats</strong> et <strong>Just Eat</strong> redéfinissent fondamentalement ce qu’il faut pour diriger un restaurant. Light Kitch devient votre partenaire parfait pour vous lancer dans ce monde numérique et propulser votre restaurant dans ce monde digital.</p>
-
-        <br/>
-
-        <h3>La Technologie au Cœur de l’Expérience</h3>
         <p>
-          La tendance a donné naissance à un modèle numérique : les <strong>“restaurants virtuels”</strong>, liés à des établissements avec un lieu physique mais élaborant des plats exclusifs pour les applications. Cela permet d’élargir une offre qui se dévoile comme une possibilité non explorée :
-          <em>Avoir des marques virtuelles spécialisées</em>, tenant compte des tendances et envies de ses clients fidélisés, et en même temps attirer de nouveaux clients.
+          {t('articles.0.content.0.text')} <strong>{t('articles.0.content.0.strong')}</strong> {t('articles.0.content.0.text2')} <strong>{t('articles.0.content.0.strong2')}</strong> {t('articles.0.content.0.text3')}
+        </p>
+        <br />
+
+        <h3>{t('articles.0.content.1.title')}</h3>
+        <p>
+          {t('articles.0.content.1.content.text')} <strong>{t('articles.0.content.1.content.strong')}</strong>, {t('articles.0.content.1.content.text2')} <em>{t('articles.0.content.1.content.em')}</em>, {t('articles.0.content.1.content.text3')}
         </p>
         <br />
 
         <p>
-          L’amélioration continue de l’expérience en ligne et de l’efficacité opérationnelle a transformé les restaurants virtuels en un centre d’investissement majeur. Les entreprises reconnaissent le potentiel et s’embarquent dans le monde des restaurants virtuels.
-        </p>
-        <br/>
-
-        <h3>Fonctionnement d’un Restaurant Virtuel</h3>
-        <br/>
-        <p>
-          Ils opèrent sur des plateformes numériques. Les clients parcourent les menus, passent des commandes et payent en ligne. Le restaurant reçoit la demande, prépare la nourriture, et un service de livraison la transporte au client. Simple, efficace et adapté aux nouvelles formes de consommation.
+          {t('articles.0.content.2.text')}
         </p>
         <br />
 
-        <h3>Défis du Propriétaire d’un Restaurant Virtuel</h3>
-        <br/>
+        <h3>{t('articles.0.content.3.title')}</h3>
+        <br />
         <p>
-          Bien que les coûts diminuent, la rentabilité n’est pas garantie. Le marketing devient crucial.
-          Dans un marché compétitif, une promotion appropriée est essentielle pour se démarquer. Se tenir au courant des tendances et perfectionner les compétences en marketing sont des conditions de succès.
+          {t('articles.0.content.3.text')}
         </p>
-        <p>
-          De même, le temps consacré à la gestion administrative des plateformes, les actualisations, l’optimisation des comptes, les plaids et la communication avec les supports des applications, peut devenir un poids assez important que nous savons, peut vite se transformer en un blocage de votre expérience… Et pour cela, on est là!
-        </p>
+        <br />
 
-        <br/>
-        <h3>Light Kitch, votre partenaire digital</h3>
-        <br/>
+        <h3>{t('articles.0.content.4.title')}</h3>
+        <br />
         <p>
-          Light Kitch, dans son engagement envers l’innovation, mène l’expertise du marketing digital sur les plateformes de livraison au service des restaurants virtuels. L’avenir de la restauration réside dans la numérisation, et nous sommes là pour façonner ce futur.
+          {t('articles.0.content.4.content.0.text')}
         </p>
-        <br/>
+        <p>
+          {t('articles.0.content.4.content.1.text')}
+        </p>
+        <br />
 
-        <p><strong>Vous nous rejoignez dans cette excitante aventure culinaire ?</strong></p>
-        <br/>
+        <h3>{t('articles.0.content.5.title')}</h3>
+        <br />
+        <p>
+          {t('articles.0.content.5.text')}
+        </p>
+        <br />
+
+        <p><strong>{t('articles.0.content.6.strong')}</strong></p>
+        <br />
       </>
     ),
   },
   {
     id: 2,
-    title: 'Pourquoi ouvrir un restaurant virtuel ?',
-    author: 'Admin',
-    category: 'Uncategorized',
+    title: t('articles.1.title'),
+    author: t('articles.1.author'),
+    category: t('articles.1.category'),
     image: 'https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984559/LightKitch/124428-1-400x250_utowjg.jpg',
-    date: 'May 20, 2024',
+    date: t('articles.1.date'),
     text: (
       <>
         <p>
-          Ouvrir un restaurant virtuel en complément d’un restaurant physique peut offrir plusieurs avantages et opportunités pour élargir votre clientèle et augmenter les revenus. Voici quelques raisons pour lesquelles certains restaurateurs choisissent d’ajouter un restaurant virtuel à leur enseigne existante :
+          {t('articles.1.content.0.text')}
         </p>
 
         <br />
 
-        <h3>1. Expansion de la clientèle</h3>
+        <h3>{t('articles.1.content.1.title')}</h3>
         <p>
-          Les restaurants virtuels peuvent toucher un public plus large, notamment ceux qui préfèrent commander des repas en ligne plutôt que de se rendre physiquement dans un restaurant. Cela peut attirer de nouveaux clients grâce à un rayon géographique d’opportunités plus étendu et fidéliser ceux qui recherchent la commodité de la livraison à domicile.
+          {t('articles.1.content.1.text')}
         </p>
 
         <br />
 
-        <h3>2. Diversification de l’offre</h3>
+        <h3>{t('articles.1.content.2.title')}</h3>
         <p>
-          Vous pouvez élargir votre menu en introduisant de nouvelles cuisines ou des spécialités qui ne sont pas présentes dans votre restaurant. Cela permet de tester de nouveaux concepts sans les coûts liés à l’ouverture d’un nouveau lieu physique.
+          {t('articles.1.content.2.text')}
         </p>
 
         <br />
 
-        <h3>3. Optimisation des opérations</h3>
+        <h3>{t('articles.1.content.3.title')}</h3>
         <p>
-          Les restaurants virtuels peuvent être plus efficaces sur le plan opérationnel, car ils se concentrent principalement sur la restauration et la livraison. Notre accompagnement peut permettre une utilisation plus optimale de vos ressources, réduisant la charge administrative allouée à la gestion des plateformes.
+          {t('articles.1.content.3.text')}
         </p>
 
         <br />
 
-        <h3>4. Adaptation aux tendances du marché</h3>
+        <h3>{t('articles.1.content.4.title')}</h3>
         <p>
-          La demande croissante pour la livraison de repas et la popularité des plateformes de livraison en ligne font des restaurants virtuels une réponse adaptée aux tendances actuelles du marché.
+          {t('articles.1.content.4.text')}
         </p>
 
         <br />
 
         <p>
-          Avant de prendre une décision, il est essentiel d’analyser votre marché local, la demande pour la livraison de repas, et d’évaluer les coûts et les avantages potentiels.
+          {t('articles.1.content.5.text')}
         </p>
 
         <br />
 
-        <h3>Light Kitch, votre partenaire digital</h3>
+        <h3>{t('articles.1.content.6.title')}</h3>
         <p>
-          Light Kitch promet de devenir un allié fiable pour les restaurants. En proposant une gamme variée de produits et de services visant à faciliter l’adaptation des restaurants aux évolutions technologiques et aux tendances à venir. De plus, notre équipe d’experts est disponible quotidiennement pour vous accompagner tout au long de cette transition.
+          {t('articles.1.content.6.text')}
         </p>
       </>
     ),
   },
   {
     id: 3,
-    title: 'La Révolution des Restaurants Virtuels',
-    author: 'Admin',
-    category: 'Uncategorized',
+    title: t('articles.2.title'),
+    author: t('articles.2.author'),
+    category: t('articles.2.category'),
     image: 'https://res.cloudinary.com/dt04wtcwf/image/upload/v1727984560/LightKitch/2149255928-1-400x250_jri2zw.jpg',
-    date: 'May 20, 2024',
+    date: t('articles.2.date'),
     text: (
       <>
         <p>
-          Les restaurants virtuels, connus grâce à l’essor des <strong>“Ghost Kitchens”</strong> ou <strong>“Dark Kitchens”</strong>, observent une croissance impressionnante sur les plateformes de livraison telles que <strong>Ubereats</strong> ou <strong>Deliveroo</strong>. Ces nouveaux concepts attirent chaque jour davantage de clients, cherchant de nouvelles expériences culinaires depuis le confort de leur domicile.
+          {t('articles.2.content.0.text')}
+          <strong>{t('articles.2.content.0.strong')}</strong>
+          {t('articles.2.content.0.text2')}
+          <strong>{t('articles.2.content.0.strong2')}</strong>
+          {t('articles.2.content.0.text3')}
+          <strong>{t('articles.2.content.0.strong3')}</strong>
+          {t('articles.2.content.0.text4')}
+          <strong>{t('articles.2.content.0.strong4')}</strong>
+          {t('articles.2.content.0.text5')}
         </p>
 
         <br/>
 
         <p>
-          Naviguer sur les plateformes de commandes en ligne permet aux utilisateurs de découvrir des restaurants virtuels dont ils n’auraient peut-être jamais entendu parler.
-          Les restaurants virtuels se répandent à travers toute l’Europe, et cette nouvelle approche de la restauration devient un levier précieux pour les restaurateurs cherchant à développer leur activité de livraison de manière plus efficiente.
+          {t('articles.2.content.1.text')}
         </p>
 
         <br/>
 
-        <h3>Qu’est-ce qu’un restaurant virtuel?</h3>
+        <h3>{t('articles.2.content.2.title')}</h3>
         <p>
-          Un restaurant virtuel est la vitrine en ligne d’un établissement physique, qui propose exclusivement de la nourriture en livraison, via les plateformes de commande en ligne (<strong>Ubereats</strong>, <strong>Deliveroo</strong>, <strong>LyvEat</strong> …). Créer un restaurant virtuel vous permet de diffuser facilement votre cuisine à travers de nouvelles marques exclusivement en ligne.
+          {t('articles.2.content.2.content.text')}
+          <strong>{t('articles.2.content.2.content.strong')}</strong>
+          {t('articles.2.content.2.content.text2')}
+          <strong>{t('articles.2.content.2.content.strong2')}</strong>
+          {t('articles.2.content.2.content.text3')}
+          <strong>{t('articles.2.content.2.content.strong3')}</strong>
+          {t('articles.2.content.2.content.text4')}
         </p>
 
         <br/>
 
-        <h3>Pourquoi les restaurateurs ouvrent-ils des restaurants virtuels?</h3>
+        <h3>{t('articles.2.content.3.title')}</h3>
         <p>
-          Les restaurateurs peuvent développer de nouveaux concepts depuis leur cuisine. Cela permet à votre restaurant, qu’il soit déjà présent ou non sur ces plateformes, de livrer ces produits via de nouveaux canaux de vente. La création de vitrines virtuelles vous offrira plus de visibilité sur les plateformes de livraison et donc la possibilité de générer plus de chiffre d’affaires. Ainsi, vous pourrez atteindre une clientèle supplémentaire, tout en conservant votre clientèle habituelle.
+          {t('articles.2.content.3.text')}
         </p>
 
         <br/>
 
-        <h3>Quel type de menu pour les cuisines virtuelles?</h3>
+        <h3>{t('articles.2.content.4.title')}</h3>
         <p>
-          Tous les menus peuvent servir de base aux restaurants virtuels. Nos experts sélectionnent les produits les plus adéquats proposés par les restaurateurs pour leur créer des concepts innovants. L’objectif est de faire en sorte que le menu soit cohérent avec les attentes culinaires des consommateurs sur les plateformes de livraison.
+          {t('articles.2.content.4.text')}
         </p>
 
         <br/>
 
-        <h3>Comment Light Kitch aide-t-il les restaurants?</h3>
+        <h3>{t('articles.2.content.5.title')}</h3>
         <p>
-          Nous offrons un accompagnement sur la création et le développement de votre restaurant virtuel. De la gestion des commandes à la stratégie de communication, Light Kitch est là pour assurer votre réussite dans l’univers des restaurants virtuels. N’attendez plus, rejoignez notre équipe pour propulser votre restaurant vers de nouveaux sommets!
+          {t('articles.2.content.5.text')}
         </p>
       </>
     ),

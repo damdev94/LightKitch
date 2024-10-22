@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import ReactDOM from 'react-dom/client';
 import i18n from "i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
@@ -24,12 +24,17 @@ i18n
     },
     backend: {
       loadPath: '/assets/locales/{{lng}}/{{ns}}/translation.json',
-    }
+    },
+    react: {
+      useSuspense: true,
+    },
   });
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+     <Suspense fallback={<div>Loading translations...</div>}>
+        <App />
+     </Suspense>
   </React.StrictMode>
 );

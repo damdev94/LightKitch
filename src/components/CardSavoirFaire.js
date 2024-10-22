@@ -1,10 +1,12 @@
 import React from 'react'
 import '../css/components/cardSavoirFaire.scss'
 import CardIntegration from './CardIntegration'
+import cookies from 'js-cookie';
 
 function CardSavoirFaire({backgroundColor, imageUrl, textTitle, text, number, backgroundSize, rotateBackground}) {
 
-console.log(rotateBackground)
+  const languageCode = cookies.get('i18next');
+
   return (
     <div className='cardSavoirFaire-container' style={{backgroundColor: backgroundColor}}>
 
@@ -17,15 +19,14 @@ console.log(rotateBackground)
             text= {textTitle}
             textSide={true}
             top= '5vw'
-            left= '5vw'
+            right={languageCode === 'ar' ? '5vw' : undefined}
+            left={languageCode === 'ar' ? undefined : '5vw'}
           />
 
         </div>
 
-        <div className="text">
-          <p>Un restaurant virtuel est la vitrine en ligne d’un établissement physique, qui propose exclusivement de la nourriture en livraison, via les plateformes de commande en ligne (Ubereats, Deliveroo, LyvEat …).</p>
-          <br/>
-          <p>Créer un restaurant virtuel vous permet de diffuser facilement votre cuisine à travers de nouvelles marques exclusivement en ligne.</p>
+        <div className="text" style={{fontSize: '18px', marginTop: '20px'}}>
+         {text}
         </div>
 
       </div>

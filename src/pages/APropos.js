@@ -6,11 +6,13 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import '../css/pages/apropos.scss'
 import { Link } from 'react-router-dom';
+import { useTranslation } from "react-i18next";
 import MarqueeComponent from '../components/globalFooter/globalFooterComponents/MarqueeComponent';
 import GlobalFooter from '../components/globalFooter/GlobalFooter'
 
 function APropos({pageVariants}) {
 
+  const { t } = useTranslation('apropos');
   const aproposContainer = useRef();
   const aproposTop = useRef();
 
@@ -40,20 +42,19 @@ function APropos({pageVariants}) {
 
         <div className="apropos-top" id='top' style={{ backgroundPosition: 'center 115%' }} ref={aproposTop}>
           <div className="apropos-title">
-            <h1>À propos de <strong>nous</strong></h1>
-            <p>Le coeur de Light Kitch</p>
+            <h1>{t('apropos.title.text')} <strong>{t('apropos.title.strong')}</strong></h1>
+            <p>{t('apropos.subtitle')}</p>
           </div>
           <div className="apropos-text">
-            <p>Le marché de livraison de plats préparés est en expansion continue, que ce soit dans les centres villes ou dans les milieux ruraux.
-            Light Kitch, c’est une équipe jeune, dynamique et pleine d’ambition qui n’arrête pas de s’agrandir.</p>
+            <p>{t('apropos.text1')}</p>
 
             <br/>
             <br/>
 
-            <p>Les multiples partenariats effectués par Light Kitch avec d’autres entreprises permettent de proposer une offre complète aux restaurateurs, que ce soit dans les centres villes, dans les milieux ruraux, ainsi que dans les lieux mal desservis par la livraison.</p>
+            <p>{t('apropos.text2')}</p>
           </div>
           <div className="apropos-button">
-            <Link to="/devenir-partenaire" className='appointement'>Prendre RDV <FontAwesomeIcon style={{marginLeft : "3px"}} icon={faPenToSquare} /></Link>
+            <Link to="/devenir-partenaire" className='appointement'>{t('apropos.button')} <FontAwesomeIcon style={{marginLeft : "3px"}} icon={faPenToSquare} /></Link>
           </div>
         </div>
 
@@ -66,19 +67,19 @@ function APropos({pageVariants}) {
           <div className="guidance-left">
 
           <div className="paragraphes">
-              <p>Nous offrons aux restaurants la possibilité de créer facilement et rapidement des vitrines virtuelles, grâce à notre solide expérience dans les applications de livraison. Nous prenons en charge tous les leviers pour optimiser vos résultats, en nous adaptant à la localisation géographique de votre établissement pour proposer des offres adaptées à votre future clientèle.</p>
+              <p>{t('apropos.business_guidance.paragraph1')}</p>
 
               <br/>
 
-              <p>Nos restaurants virtuels sont conçus selon les habitudes de consommation spécifiques de votre zone, car nous comprenons que chaque marché est unique. </p>
+              <p>{t('apropos.business_guidance.paragraph2')} </p>
 
               <br/>
 
-              <p>La livraison a révolutionné les modes de consommation et représente l’avenir de la restauration. Notre concept permet à votre restaurant, qu’il soit déjà présent ou non sur ces plateformes, de livrer vos produits via de nouveaux canaux de vente.</p>
+              <p>{t('apropos.business_guidance.paragraph3')}</p>
 
               <br/>
 
-              <p>Nos vitrines virtuelles vous offrent une opportunité sans précédent de générer plus de chiffre d’affaires et d’acquérir une clientèle supplémentaire. Nous sommes là pour vous guider à chaque étape du processus, afin que votre entreprise prospère dans cet environnement en constante évolution.</p>
+              <p>{t('apropos.business_guidance.paragraph4')}</p>
             </div>
 
           </div>
@@ -97,23 +98,22 @@ function APropos({pageVariants}) {
           </div>
 
           <div className="personnal-right">
-            <p>Chers restaurateurs,</p>
+            <p>{t('apropos.personnal_message.greeting')}</p>
             <br/>
-            <p>Chez Light Kitch, notre mission est simple : vous aider à augmenter vos ventes et à atteindre de nouveaux clients grâce à nos restaurants virtuels; Nous savons à quel point la livraison a transformé les modes de consommation, et nous croyons fermement que son poids continuera à peser davantage dans l’ avenir de la restauration.</p>
+            <p>{t('apropos.personnal_message.paragraph1')}</p>
             <br/>
-            <p>Nous comprenons parfaitement les défis auxquels vous êtes confrontés aujourd’hui dans la gestion des applications de livraison. C’est pourquoi nous nous spécialisons dans la gestion intégrale de toutes ces plateformes, afin de vous libérer de cette charge et de vous permettre de vous concentrer sur ce que vous faites de mieux : cuisiner et satisfaire vos clients.
-            Le marché de la livraison de plats préparés est en expansion continue, que ce soit dans les centres-villes ou dans les milieux ruraux.</p>
+            <p>{t('apropos.personnal_message.paragraph2')}</p>
             <br/>
-            <p>Light Kitch, c’est une équipe jeune, dynamique et pleine d’ambition qui n’arrête pas de s’agrandir. Toujours disponible et à votre écoute, nous nous adaptons au cas par cas pour tous nos clients. Forts de notre expérience dans les applications de livraison, nous mettons tout en œuvre pour optimiser vos résultats. Notre équipen est dédiée à créer des solutions adaptées à la localisation géographique de votre restaurant, en tenant compte des habitudes de consommation de votre zone. Que vous soyez en centre-ville, en milieu rural, ou dans une zone mal desservie par la livraison, nous avons les outils et les partenariats nécessaires pour vous offrir une solution complète.</p>
+            <p>{t('apropos.personnal_message.paragraph3')}</p>
             <br/>
-            <p>Nous sommes passionnés par notre travail et animés par l’ambition de voir votre restaurant prospérer. En choisissant Light Kitch, vous optez pour une croissance de votre chiffre d’affaires et une acquisition de nouvelle clientèle, tout en profitant de la croissance continue du marché de livraison de plats préparés.</p>
+            <p>{t('apropos.personnal_message.paragraph4')}</p>
             <br/>
-            <p>Rejoignez-nous dans cette aventure et laissez-nous vous aider à réaliser votre plein potentiel.</p>
+            <p>{t('apropos.personnal_message.closing')}</p>
             <br/>
-            <p>Cordialement,</p>
+            <p>{t('apropos.personnal_message.signoff')}</p>
             <br/>
-            <p>Louis Rebattu</p>
-            <p>CEO et Fondateur de Light Kitch</p>
+            <p>{t('apropos.personnal_message.signatureName')}</p>
+            <p>{t('apropos.personnal_message.signature')}</p>
           </div>
         </div>
 

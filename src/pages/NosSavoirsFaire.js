@@ -5,9 +5,15 @@ import '../css/pages/nosSavoirsFaire.scss'
 import { Link } from 'react-router-dom';
 import CardSavoirFaire from '../components/CardSavoirFaire';
 import SliderSavoir from '../components/SliderSavoir';
-import { cardsData } from '../data/data';
+import { getCardsData } from '../data/data';
+import { useTranslation } from "react-i18next";
 
 function NosSavoirsFaire({pageVariants}) {
+
+
+  const { t } = useTranslation('nosSavoirsFaire');
+  const { t: t2} = useTranslation('cardSavoirsFaire');
+  const cardsData = getCardsData(t2);
 
   return (
     <motion.div initial="initial" animate="animate" exit="exit" variants={pageVariants} className='nosSavoirsFaire-container'>
@@ -22,9 +28,9 @@ function NosSavoirsFaire({pageVariants}) {
 
           <div className="right-content">
 
-            <h2>Restaurants <strong>Virtuels</strong></h2>
-            <p>Découvrez comment notre solution clé en main peut transformer votre activité</p>
-            <Link to='/devenir-partenaire'>Prendre RDV</Link>
+            <h2>{t('presentation_section.heading.0')} <strong>{t('presentation_section.heading.1.strong')}</strong></h2>
+            <p>{t('presentation_section.description.0')}</p>
+            <Link to='/devenir-partenaire'>{t('presentation_section.cta_button')}</Link>
 
           </div>
 
@@ -35,7 +41,7 @@ function NosSavoirsFaire({pageVariants}) {
       <div className="nosSavoirsFaire-promotion">
 
         <div className='promotion-title'>
-          <p>Propulsez votre restaurant vers de nouveaux sommets grâce à Light Kitch, votre partenaire expert en restaurants virtuels. Nous nous occupons de tout, de la création de marques virtuelles sur mesure à l’optimisation de vos menus et de vos campagnes marketing, afin de maximiser votre visibilité et vos revenus sur les plateformes de livraison.</p>
+          <p>{t('promotion_section.description')}</p>
         </div>
 
         <div className="promotion-cards">
@@ -61,13 +67,13 @@ function NosSavoirsFaire({pageVariants}) {
 
         <div className="virtualFranchises-left">
 
-          <h2>Nos franchises virtuels</h2>
+          <h2>{t('virtual_franchises_section.heading')}</h2>
 
-          <p>Un pannel de marques à proposer, clés en main pour les restaurateurs, avec les différents food types.</p>
+          <p>{t('virtual_franchises_section.description')}</p>
 
           <div className="left-button">
 
-            <Link to='/devenir-partenaire'>Contactez nous pour en savoir plus</Link>
+            <Link to='/devenir-partenaire'>{t('virtual_franchises_section.cta_button')}</Link>
 
           </div>
 

@@ -1,0 +1,19 @@
+{
+    "titleSection": {
+      "heading":{
+        "strong1" : "Propulsez",
+        "text" : "votre virtuel restaurant vers de nouveaux sommets avec",
+        "strong2" : "Light Kitch"
+      },
+      "paragraph": "Développez votre activité, optimisez vos opérations et atteignez une nouvelle clientèle grâce à nos solutions de restaurants virtuels."
+    },
+    "formSection": {
+      "inputs": {
+        "namePlaceholder": "Nom",
+        "emailPlaceholder": "Email",
+        "messagePlaceholder": "Message"
+      },
+      "confirmationMessage": "Votre message a été envoyé avec succès !",
+      "submitButton": "Soumettre"
+    }
+}

@@ -1,0 +1,31 @@
+{
+  "apropos": {
+    "title": {
+      "text" : "About",
+      "strong": "us"
+    },
+    "subtitle": "The heart of Light Kitch",
+    "text1": "The prepared meal delivery market is continuously expanding, both in urban centers and rural areas. Light Kitch is a young, dynamic, and ambitious team that keeps growing.",
+    "text2": "Light Kitch’s multiple partnerships with other companies allow offering a complete solution to restaurateurs, whether in urban centers, rural areas, or locations underserved by delivery services.",
+    "button": "Appointment",
+
+    "business_guidance": {
+      "paragraph1": "We offer restaurants the ability to easily and quickly create virtual storefronts, thanks to our solid experience in delivery applications. We handle all the strategies to optimize your results, adapting to the geographic location of your establishment to offer tailored solutions for your future customers.",
+      "paragraph2": "Our virtual restaurants are designed according to the specific consumption habits of your area, as we understand that each market is unique.",
+      "paragraph3": "Delivery has revolutionized consumption patterns and represents the future of dining. Our concept allows your restaurant, whether present or not on these platforms, to deliver your products through new sales channels.",
+      "paragraph4": "Our virtual storefronts offer you an unprecedented opportunity to generate more revenue and acquire additional customers. We are here to guide you every step of the way so that your business thrives in this ever-evolving environment."
+    },
+
+    "personnal_message": {
+      "greeting": "Dear restaurateurs,",
+      "paragraph1": "At Light Kitch, our mission is simple: to help you increase your sales and reach new customers through our virtual restaurants. We know how much delivery has transformed consumption patterns, and we firmly believe that its importance will continue to grow in the future of dining.",
+      "paragraph2": "We fully understand the challenges you face today in managing delivery applications. That’s why we specialize in the complete management of all these platforms, freeing you from this burden and allowing you to focus on what you do best: cooking and satisfying your customers. The prepared meal delivery market is continuously expanding, both in urban centers and rural areas.",
+      "paragraph3": "Light Kitch is a young, dynamic, and ambitious team that keeps growing. Always available and attentive, we adapt to each of our clients' unique needs. With our experience in delivery applications, we do everything to optimize your results. Our team is dedicated to creating solutions tailored to the geographic location of your restaurant, taking into account the consumption habits of your area. Whether you’re in an urban center, rural area, or underserved by delivery services, we have the tools and partnerships to offer you a complete solution.",
+      "paragraph4": "We are passionate about our work and driven by the ambition to see your restaurant thrive. By choosing Light Kitch, you are opting for revenue growth and new customer acquisition, all while benefiting from the continuous growth of the prepared meal delivery market.",
+      "closing": "Join us in this adventure and let us help you reach your full potential.",
+      "signoff": "Sincerely,",
+      "signatureName": "Louis Rebattu,",
+      "signature": "CEO and Founder of Light Kitch"
+    }
+  }
+}

@@ -8,8 +8,11 @@ function MarqueeComponent({backgroundColor, color}) {
   const { t } = useTranslation('marquee')
 
   return (
-    <Marquee className='marqueeComponent-container' style={{backgroundColor: backgroundColor, color : color}}>
-      <p className='point'>·</p>
+    <Marquee
+      className='marqueeComponent-container'
+      style={{backgroundColor: backgroundColor, color : color}}
+      >
+      <p className='point' >·</p>
       <p className='word'>{t('words.0.word')}</p>
       <p className='point'>·</p>
       <p className='word'>{t('words.1.word')}</p>
